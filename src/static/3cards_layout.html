@@ -9,68 +9,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta charset="utf-8">
   <title>sdm-app</title>
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 </head>
 <body>
-  <!--Import jQuery before materialize.js-->
-  <div class="row s12">
 
-    <h2>Question question time</h2>
-    <div class="col s12 m4 l4"> <!-- <div class="col s12 m7">-->
-    <!--  <h2 class="header">Horizontal Card</h2>-->
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="http://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
+  <section class="hbs-container"></section>
+
+  <!-- actual client side template -->
+  <script id="template-hbs" type="text/x-handlebars-template">
+    <div class="row s12">
+      <h2>{{questions.1.question}}</h2>
+      <div class="col s12 m4 l4">
+        <div class="card horizontal">
+          <div class="card-image">
+            <!--  <img src="http://lorempixel.com/100/190/nature/6">-->
+        <!--    <img src={{treatments.practical_support.icon}} alt="" />-->
           </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>{{treatments.practical_support.name}}</h4>
+              <img src={{treatments.practical_support.icon}} alt="" />
+              <p>{{questions.1.answers.practical_support}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4 l4">
+        <div class="card horizontal">
+          <div class="card-image">
+            <!--  <img src="http://lorempixel.com/100/190/nature/6">-->
+            <img src={{treatments.talking_therapy.icon}} alt="" />
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>{{treatments.talking_therapy.name}}</h4>
+              <p>{{questions.1.answers.talking_therapy}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m4 l4">
+        <div class="card horizontal">
+          <div class="card-image">
+            <!--  <img src="http://lorempixel.com/100/190/nature/6">-->
+            <img src={{treatments.medication.icon}} alt="" />
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h4>{{treatments.medication.name}}</h4>
+              <p>{{questions.1.answers.medication}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="col s12 m4 l4">
-    <!--  <h2 class="header">Horizontal Card</h2>-->
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="http://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  </script>
 
-    <div class="col s12 m4 l4">
-      <!--<h2 class="header">Horizontal Card</h2>-->
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="http://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/cards.js"></script>
 </body>
 </html>

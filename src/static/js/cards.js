@@ -1,4 +1,49 @@
+// get the template
+$(document).ready(function(){
+    var source   = $("#template-hbs").html();
 
+    // compile template:
+    var template = Handlebars.compile(source);
+
+    // apply template:
+    var html = template({
+        title: 'Info',
+        body: "CLient side templating with HBS",
+        1:'test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
+        treatments: {
+          practical_support:{
+            name: "Practical Support",
+            icon: "../static/img/practical_support.jpg"
+          },
+          talking_therapy:{
+            name: "Talking Therapy",
+            icon:"../static/img/talking_therapy.png"
+          },
+          medication:{
+            name: "Medication",
+            icon: "../static/img/medication.jpg"
+          }
+        },
+        questions:{
+          1:{
+          question:"What will this involve?",
+          cards:3,
+          identical:null,
+          answers: {
+            practical_support:"You will meet with a CAMHS worker who will offer you short-term, goal-focused support and activities.\n\nThis will also include advice about things like sleep, diet and exercise.",
+            talking_therapy:"You will meet weekly with a therapist who will offer you a space to talk about and understand your feelings and the difficulties in your life. \n\nEach session is about an hour long and can involve other family members. ",
+            medication:"You will meet with a GP, psychiatrist or a specialist nurse who will provide a script for medication.\n\nThe most common medication for depression is called an SSRI. \n\nThis is taken once daily as a tablet."
+          }
+        }
+      }
+    });
+
+
+    // add result to the page:
+    $('.hbs-container').append(html);
+});
+/*var source = $("#some-template").html();
+var template = Handlebars.compile(source);
 var  depression={
   treatments: [
     {
@@ -80,3 +125,6 @@ var  depression={
     }
   ]
 };
+
+$('body').append(template(data));
+*/
