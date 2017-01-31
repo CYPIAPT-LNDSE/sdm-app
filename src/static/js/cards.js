@@ -10,15 +10,15 @@ $(document).ready(function(){
         treatments: {
           practical_support:{
             name: "Practical Support",
-            icon: "../static/img/practical_support.jpg"
+            icon: "../static/img/practical_support2.jpg"
           },
           talking_therapy:{
             name: "Talking Therapy",
-            icon:"../static/img/talking_therapy.png"
+            icon:"../static/img/talking_therapy2.png"
           },
           medication:{
             name: "Medication",
-            icon: "../static/img/medication.jpg"
+            icon: "../static/img/medication2.jpg"
           }
         },
         questions:{
@@ -94,4 +94,5 @@ $(document).ready(function(){
     // add result to the page:
     $('.hbs-container').append(html);
     $('.card').matchHeight();
+    $('.card-name').matchHeight();
 });

@@ -26,11 +26,15 @@
       <div class="col s12 m8 l8">
         <div class="card horizontal">
           <div class="card-image-duo">
-            <h4>{{treatments.practical_support.name}}</h4>
+            <div class="card-name">
+              <h4>{{treatments.practical_support.name}}</h4>
+            </div>
             <img src={{treatments.practical_support.icon}} alt="" />
           </div>
           <div class="card-image-duo">
-            <h4>{{treatments.talking_therapy.name}}</h4>
+            <div class="card-name">
+              <h4>{{treatments.talking_therapy.name}}</h4>
+            </div>
             <img src={{treatments.talking_therapy.icon}} alt="" />
           </div>
           <div class="card-stacked-duo">
@@ -47,7 +51,9 @@
       <div class="col s12 m4 l4">
         <div class="card horizontal">
           <div class="card-image">
-            <h4>{{treatments.medication.name}}</h4>
+            <div class="card-name">
+              <h4>{{treatments.medication.name}}</h4>
+            </div>
             <img src={{treatments.medication.icon}} alt="" />
           </div>
           <div class="card-stacked">
@@ -60,8 +66,8 @@
           </div>
         </div>
       </div>
-    <!--  <a href="3cards_layout.html" onclick="location.href=this.href+'?key='+ ++scrt_var;return false;">Go to the next question</a>-->
-     <a href="3cards_layout.html" onclick='location.href="file:///home/nori/FAC/sdm-app/src/static/"+"2cards_layout_b.html?key="+ ++scrt_var;return false;'>Go to the next question</a>
+      <!--  <a href="3cards_layout.html" onclick="location.href=this.href+'?key='+ ++scrt_var;return false;">Go to the next question</a>-->
+      <a href="3cards_layout.html" onclick='location.href="file:///home/nori/FAC/sdm-app/src/static/"+"2cards_layout_b.html?key="+ ++scrt_var;return false;'>Go to the next question</a>
     </div>
 
   </script>
@@ -75,6 +81,6 @@
   <script type="text/javascript" src="js/cards.js"></script>
 
 
-  </script>
+</script>
 </body>
 </html>
