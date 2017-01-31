@@ -5,6 +5,7 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/cards.css">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta charset="utf-8">
@@ -25,7 +26,9 @@
       <div class="col s12 m4 l4">
         <div class="card horizontal">
           <div class="card-image">
-            <h4>{{treatments.practical_support.name}}</h4>
+            <div class="card-title">
+            <h5>{{treatments.practical_support.name}}</h5>
+          </div>
             <img src={{treatments.practical_support.icon}} alt="" />
           </div>
           <div class="card-stacked">
@@ -42,7 +45,7 @@
       <div class="col s12 m4 l4">
         <div class="card horizontal">
           <div class="card-image">
-            <h4>{{treatments.talking_therapy.name}}</h4>
+            <h5>{{treatments.talking_therapy.name}}</h5>
             <img src={{treatments.talking_therapy.icon}} alt="" />
           </div>
           <div class="card-stacked">
@@ -59,7 +62,7 @@
       <div class="col s12 m4 l4">
         <div class="card horizontal">
           <div class="card-image">
-            <h4>{{treatments.medication.name}}</h4>
+            <h5>{{treatments.medication.name}}</h5>
             <img src={{treatments.medication.icon}} alt="" />
           </div>
           <div class="card-stacked">
