@@ -9,52 +9,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta charset="utf-8">
   <title>sdm-app</title>
+  <script language="javascript" type="text/javascript">
+  var scrt_var = window.location.href.split("=")[1] || 1;
 
+  </script>
 </head>
 <body>
-  <!--Import jQuery before materialize.js-->
-  <div class="row s12">
 
-    <h2>Question question time</h2>
-    <div class="col s12 m4 l4"> <!-- <div class="col s12 m7">-->
-    <!--  <h2 class="header">Horizontal Card</h2>-->
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="http://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="hbs-container"></section>
 
-    <div class="col s12 m8 l8">
-    <!--  <h2 class="header">Horizontal Card</h2>-->
-      <div class="card horizontal">
-        <div class="card-image">
-          <img src="http://lorempixel.com/100/190/nature/6">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.</p>
+  <!-- actual client side template -->
+  <script id="template-hbs" type="text/x-handlebars-template">
+    <div class="row s12">
+      <h2>{{getQuestion questions}}<h2>
+      <h2>{{questions.scrt_var.question}}</h2> <!--CHECK THIS ? REMOVE THIS AND FIX identical cards :()--->
+      <div class="col s12 m4 l4">
+        <div class="card horizontal">
+          <div class="card-image">
+            <!--  <img src="http://lorempixel.com/100/190/nature/6">-->
+            <h4>{{treatments.practical_support.name}}</h4>
+            <img src={{treatments.practical_support.icon}} alt="" />
           </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
+          <div class="card-stacked">
+            <div class="card-content">
+              <!--<h4>{{treatments.practical_support.name}}</h4>-->
+            <!--  <img src={{treatments.practical_support.icon}} alt="" /> -->
+              <p>{{getPracticalSupport questions}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="col s12 m8 l8">
+        <div class="card horizontal">
+          <div class="card-image">
+            <!--  <img src="http://lorempixel.com/100/190/nature/6">-->
+            <h4>{{treatments.talking_therapy.name}}</h4>
+            <img src={{treatments.talking_therapy.icon}} alt="" />
+            <h4>{{treatments.medication.name}}</h4>
+            <img src={{treatments.medication.icon}} alt="" />
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <!--<h4>{{treatments.talking_therapy.name}}</h4>--->
+              <p>{{getTalkingTherapy questions}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--  <a href="3cards_layout.html" onclick="location.href=this.href+'?key='+ ++scrt_var;return false;">Go to the next question</a>-->
+     <a href="3cards_layout.html" onclick='location.href="file:///home/nori/FAC/sdm-app/src/static/"+"2cards_layout_b.html?key="+ ++scrt_var;return false;'>Go to the next question</a>
     </div>
 
+  </script>
 
-  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/materialize.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="js/helper.js"></script>
+  <script type="text/javascript" src="js/cards.js"></script>
 </body>
 </html>

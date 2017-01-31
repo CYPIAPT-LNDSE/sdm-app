@@ -36,8 +36,12 @@ Handlebars.registerHelper('test', function(treatments, options) {
 
 <!--<h2>{{test treatments}}</h2>-->
 
+
+
+
 #### Microframeworks and libraries we use
 
 - materialize  
 - jQuery  
-- [jquery.matchHeigh.js](https://github.com/liabru/jquery-match-height)  
+- [jquery.matchHeight.js](https://github.com/liabru/jquery-match-height)  
+- [client side handlebars tips](http://stackoverflow.com/questions/33059203/error-missing-helper-in-handlebars-js)
