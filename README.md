@@ -30,6 +30,12 @@ so I can discuss them with my clinician afterwards.
 
 ### Technical details
 
+Handlebars.registerHelper('test', function(treatments, options) {
+  return treatments.medication.name;
+});
+
+<!--<h2>{{test treatments}}</h2>-->
+
 #### Microframeworks and libraries we use
 
 - materialize  
