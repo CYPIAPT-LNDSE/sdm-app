@@ -41,6 +41,9 @@ $(document).ready(function(){
 
     // add result to the page:
     $('.hbs-container').append(html);
+    $('.card').matchHeight();
+
+
 });
 /*var source = $("#some-template").html();
 var template = Handlebars.compile(source);
