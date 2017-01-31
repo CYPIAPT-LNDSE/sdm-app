@@ -27,3 +27,11 @@ so I can easily explore the options for my treatment.
 As a young person suffering from depression,  
 I would like to be able to keep track of the options I am interested in,  
 so I can discuss them with my clinician afterwards.  
+
+### Technical details
+
+#### Microframeworks and libraries we use
+
+- materialize  
+- jQuery  
+- [jquery.matchHeigh.js](https://github.com/liabru/jquery-match-height)  

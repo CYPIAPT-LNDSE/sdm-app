@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta charset="utf-8">
   <title>sdm-app</title>
+  <script language="javascript" type="text/javascript">
+  var scrt_var = 1;
+  </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 </head>
 <body>
@@ -18,7 +21,7 @@
   <!-- actual client side template -->
   <script id="template-hbs" type="text/x-handlebars-template">
     <div class="row s12">
-      <h2>{{questions.1.question}}</h2>
+      <h2>{{questions.scrt_var.question}}</h2>
       <div class="col s12 m4 l4">
         <div class="card horizontal">
           <div class="card-image">
@@ -76,6 +79,7 @@
           </div>
         </div>
       </div>
+      <a href="3cards_layout.html" onclick="location.href=this.href+'?key='+ ++scrt_var;return false;">Go to the next question</a>
     </div>
 
   </script>
