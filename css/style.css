@@ -37,6 +37,9 @@ h1{
 .nav {
   background-color: rgb(84, 133, 185) !important;
 }
+.icon-purple {
+    color: #ba68c8;
+}
 
 body{
   background-image: url('../img/04.jpg');
