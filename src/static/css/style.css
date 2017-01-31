@@ -14,3 +14,15 @@ body nav li a{
 h1{
   margin-top: 0.5em;
 }
+
+
+
+.no-hover:hover {
+  background-color: inherit !important;
+}
+
+/* .no-hover ovverides this default rule
+.nav ul a:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+*/
