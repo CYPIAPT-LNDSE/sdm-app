@@ -23,9 +23,9 @@ $(document).ready(function(){
         },
         questions:{
           1:{
-          question:"What will this involve?",
           cards:3,
           identical:null,
+          question:"What will this involve?",
           answers: {
             practical_support:"You will meet with a CAMHS worker who will offer you short-term, goal-focused support and activities.\n\nThis will also include advice about things like sleep, diet and exercise.",
             talking_therapy:"You will meet weekly with a therapist who will offer you a space to talk about and understand your feelings and the difficulties in your life. \n\nEach session is about an hour long and can involve other family members. ",
@@ -183,5 +183,4 @@ var  depression={
   ]
 };
 
-$('body').append(template(data));
-*/
+$('body').append(template(data));*/
