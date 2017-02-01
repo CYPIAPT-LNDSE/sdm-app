@@ -25,8 +25,13 @@ $("#miscmirrorwithdog").on("click", function() {
   }
 });
 
-
-
+// Practical List Small Click
+$("#miscpracticallistsmall").on("click", function() {
+  if (globalState.currentscene == "practicalintro") {
+    globalState.currentscene = "practicaldetails";
+    practicalDetailsScene();
+  }
+});
 
 // Switch scene
 function switchScene() {
@@ -36,5 +41,11 @@ function switchScene() {
       optionsScene();
       break;
     }
+    case "practicalintro" : {
+      globalState.currentscene = "practicaldetails";
+      practicalDetailsScene();
+      break;
+    }
+    default : return;
   }
 }

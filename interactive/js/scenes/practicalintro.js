@@ -57,8 +57,8 @@ function practicalIntroScene () {
 
     // Move Mirror and Bowl Away
     function detach () {
-      TweenMax.to("#miscmirrorwithdog", 1.7, {y: "600px"});
-      TweenMax.to("#miscdogbowl", 1.7, {y: "-600px"});
+      TweenMax.to("#miscmirrorwithdog", 1.7, {y: "600px", opacity: 0});
+      TweenMax.to("#miscdogbowl", 1.7, {y: "-600px", opacity: 0});
     }
 
     // Swap Dogs
@@ -77,15 +77,9 @@ function practicalIntroScene () {
     }
 
 
-
     // TextChange
     function changeText () {
       $("#textcontainer").text("For practical support, you’ll first meet with a CAMHS worker who will offer you short term, goal-focused support and activities.");
     }
-  //
-  //   //
-  //   // Set Up globalState
-  //   //
-  //   globalState.currentscene = "options";
-  //   globalState.nextscene = "";
+
 }
