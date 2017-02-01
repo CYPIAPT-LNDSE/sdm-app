@@ -1,5 +1,11 @@
 # sdm-app
 
+## Problem
+Our clients take part in a program that encourages clinicians and patients to make a shared decision about the treatment that the patient will receive. Our clients have worked closely together with clinicians
+and collected the most common questions that patients ask about their treatment option. They have collected data
+on several mental health conditions. During the design sprint we work with the data collected on depression.
+
+
 ### User journey:
 
 As a clinician,  
