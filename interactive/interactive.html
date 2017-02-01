@@ -10,10 +10,12 @@
   </head>
   <body>
 
-      <!-- Text-container -->
-      <p class="text-container"></p>
+    <div class="container">
+      
       <!-- SVGs go here -->
-      <div class="img-container">
+      <div id="imgcontainer" class="img-container">
+        <!-- Text-container -->
+        <p id="textcontainer" class="text-container"></p>
         <!-- Dog Parts -->
           <img id="dogbodyfacingfront" class="svg-part w-20" src="../assets/svgs/dogparts/dog-body-facing-front.svg"/>
           <img id="dogbodyfacingleft"  class="svg-part w-20" src="../assets/svgs/dogparts/dog-body-facing-left.svg"/>
@@ -65,10 +67,10 @@
           <img id="miscwebdevices"   class="svg-part w-15" src="../assets/svgs/misc/web-devices.svg"/>
       </div>
 
+  </div>
     <!-- Libraries -->
     <script src="js/lib/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="js/lib/TimelineLite.min.js" type="text/javascript"></script>
-    <script src="js/lib/TweenLite.min.js" type="text/javascript"></script>
+    <script src="js/lib/TweenMax.min.js" type="text/javascript"></script>
 
     <!-- Internal -->
     <script src="js/state.js" type="text/javascript"></script>
