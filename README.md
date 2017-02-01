@@ -33,3 +33,11 @@ so I can easily explore the options for my treatment.
 As a young person suffering from depression,  
 I would like to be able to keep track of the options I am interested in,  
 so I can discuss them with my clinician afterwards.  
+
+### Future plans:
+- make a progressive web app with an indexDB database, so that the app would work
+without internet connection.
+- we worked with a shortened question set, implement the extended one for depression.
+- implement the animated version of talking therapy and medication for depression.
+- implement both the animated and plain version of the treatments for
+ the other conditions like ADHD, challenging behaviour, self-harm, low mood and anxiety.
