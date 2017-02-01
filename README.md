@@ -5,6 +5,13 @@ Our clients take part in a program that encourages clinicians and patients to ma
 and collected the most common questions that patients ask about their treatment option. They have collected data
 on several mental health conditions. During the design sprint we work with the data collected on depression.
 
+**Problems that the app helps to tackle:**
+
+Problems that currently exist/goals |   How our app can help to solve them     |
+:------------------------------:|:----------------------------------:|
+  if  doctors are not experts in the condition, they feel uncomfortable to talk about it.   |     Our app presents brief, unbiased information about the available treatments.     |
+Children with certain conditions (e.g. ADHD) feel overwhelmed if they receive a grid (leaflet) explaining their options.| The app has a gamified journey option where they receive the information step-by-step alongside with visual explanation.|
+The target audience is children aged 12-18, but it would be nice if the app can be used to inform parents. | We have plain version with simplified design, where the main focus is sharing information.|
 
 ### User journey:
 
