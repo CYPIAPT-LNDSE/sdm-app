@@ -80,18 +80,14 @@ body nav li a{
     transform: rotate(180deg);
 }
 .card-name{
-/*  border:1px solid purple;*/
   text-align: center;
   padding:0.5em;
-/*  background-color: red;*/
 }
 .redirect{
   padding: 4em 0.75em;
 }
 .question{
-/*  border:solid black 1px;*/
   margin: 1.5em auto;
-  /*background-color: white;*/
   width:80%;
 }
 .question > h2{
@@ -102,7 +98,6 @@ body nav li a{
 @media only screen and (min-width : 420px) {
   .try{
     display:block;
-  /*  border:solid orange 3px;*/
   }
   .card-image-duo{
     display: inline-block;

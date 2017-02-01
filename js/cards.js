@@ -116,7 +116,7 @@ $(document).ready(function(){
     let newUrl= url.split("/")
     let key=newUrl.pop();
     let num=key.split("=")[1]||1;
-    if (num===1) {
+    if (num==1) {
        $('.prev').hide();
        $('.next').show();
    } else if (num==6) {
