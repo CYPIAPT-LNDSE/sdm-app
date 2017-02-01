@@ -1,4 +1,4 @@
-//from Esraa's CSS
+
 header, main, footer {
   padding-left: 300px;
 }
@@ -11,10 +11,14 @@ header, main, footer {
 body nav li a{
   height: auto !important
 }
-//---------------
+
+.card{
+  border:solid red 1px;
+}
 .card-image{
   display:block;
   max-width:35% !important;
+  border:solid green 1px;
 }
 
 .card-stacked{
@@ -25,6 +29,7 @@ body nav li a{
 .card-image-duo{
   display:block;
   max-width:17.5% !important;
+  border:solid green 1px;
 }
 
 .card-stacked-duo{
@@ -39,9 +44,9 @@ body nav li a{
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-/*.card-name{
-  border:1px solid black;
-}*/
+.card-name{
+  border:1px solid purple;
+}
 .question{
   border:solid black 1px;
   margin: 1.5em auto;
@@ -57,13 +62,13 @@ img{
   max-height: 100%;
 }
 p{
-  font-size:1.5em;
+  font-size:1.25em;
 }
 
 h2{
-  font-size: 3em;
+  font-size: 2.25em;
 }
 
-h5{
-  font-size: 2.25em;
+h4{
+  font-size: 1.75em;
 }
