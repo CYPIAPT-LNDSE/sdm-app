@@ -1,3 +1,7 @@
+body{
+  background-image: url('../img/Bubble.png');
+  font-family: "Sansita One";
+}
 header, main, footer {
   padding-left: 300px;
 }
@@ -26,7 +30,8 @@ h1{
   top:20%;
   font-weight: 400;
   font-size: 2em;
-  color: rgb(84, 133, 185);
+  color: white;
+
 }
 
 .btn {
@@ -34,13 +39,10 @@ h1{
   top:60%;
   left:60%;
 }
-.nav {
-  background-color: rgb(84, 133, 185) !important;
-}
-.icon-green {
-  color: #00897b;
+nav {
+  border-bottom: black solid 3px !important;
 }
 
-body{
-  background-image: url('../img/04.jpg');
+.icon-green {
+  color: #9e9e9e ;
 }

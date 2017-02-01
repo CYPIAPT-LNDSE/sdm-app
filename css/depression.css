@@ -26,22 +26,26 @@ h1{
   top:25%;
   font-weight: 400;
   font-size: 2em;
-  color: rgb(84, 133, 185);
+  color: white;
 }
 h2 {
   position: absolute;
   left:12%;
   right:12%;
   top:10%;
+  color:#9e9e9e ;
 
 }
-.nav {
-  background-color: rgb(84, 133, 185) !important;
-}
+
 .icon-green {
-  color: #00897b;
+  color: #9e9e9e;
+}
+
+nav {
+  border-bottom: black solid 3px !important;
 }
 
 body{
-  background-image: url('../img/01.jpg');
+  background-image: url('../img/Bubble.png');
+  font-family: "Sansita One";
 }
