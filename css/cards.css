@@ -1,8 +1,9 @@
-nav{
+body{
   background-image: url('../img/Bubble.png'); <!--need it for cards-->
 }
 body{
   background-color: #031f4c;
+  color:white;
 }
 
 .margintop05em {
@@ -26,12 +27,12 @@ body nav li a{
   color: #9e9e9e ;
 }
 .card{
-  border:solid red 1px;
+  border:solid white 0.5rem;
 }
 .card-image{
   display:block;
   max-width:35% !important;
-  border:solid green 1px;
+  /*border:solid green 1px;*/
 }
 .card-content{
   vertical-align: middle;
@@ -53,7 +54,7 @@ body nav li a{
 .try{
   display:block;
   max-width:35%;
-  border:solid green 1px;
+  /*border:solid green 1px;*/
 }
 
 .card-stacked-duo{
@@ -74,16 +75,16 @@ body nav li a{
     transform: rotate(180deg);
 }
 .card-name{
-  border:1px solid purple;
+/*  border:1px solid purple;*/
   text-align: center;
 
-  background-color: red;
+/*  background-color: red;*/
 }
 
 .question{
-  border:solid black 1px;
+/*  border:solid black 1px;*/
   margin: 1.5em auto;
-  background-color: white;
+  /*background-color: white;*/
   width:80%;
 }
 .question > h2{
@@ -94,7 +95,7 @@ body nav li a{
 @media only screen and (min-width : 420px) {
   .try{
     display:block;
-    border:solid orange 3px;
+  /*  border:solid orange 3px;*/
   }
   .card-image-duo{
     display: inline-block;
@@ -106,6 +107,7 @@ body nav li a{
 img{
   max-width: 100%;
   max-height: 100%;
+  border-radius: 50% !important;
 }
 p{
   font-size:1.25em;
