@@ -28,7 +28,7 @@ body nav li a{
 
 .card-image-duo{
   display:block;
-  max-width:17.5% !important;
+  width:100%;
   border:solid green 1px;
 }
 
@@ -55,6 +55,13 @@ body nav li a{
 .question > h2{
   text-align: center;
   padding:0.25em;
+}
+
+@media only screen and (max-width : 420px) {
+  .try{
+    display:block;
+    border:solid orange 3px;
+  }
 }
 
 img{
