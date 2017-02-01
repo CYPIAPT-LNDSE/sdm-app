@@ -6,14 +6,6 @@ body nav li a{
   height: auto !important
 }
 
-.margintop05em {
-  margin-top: 0.5em;
-}
-
-.default-cursor{
-  cursor: default;
-}
-
 .no-hover:hover {
   background-color: inherit !important;
 }
@@ -22,22 +14,41 @@ body nav li a{
   position: absolute;
   left:12%;
   right:12%;
-  top:20%;
+  top:25%;
   font-weight: 400;
   font-size: 2em;
   color: white;
-
 }
 
+.margintop05em {
+  margin-top: 0.5em;
+}
+
+
+.default-cursor{
+  cursor: default;
+}
+
+.color-gray {
+  color: #9e9e9e ;
+}
+
+/*start here button on landing page*/
 .btn {
   position: absolute;
   top:60%;
   left:60%;
 }
 
-.color-gray {
-  color: #9e9e9e ;
+/*depression page*/
+.disordertitle {
+  position: absolute;
+  left:12%;
+  right:12%;
+  top:10%;
+  color:#9e9e9e;
 }
+
 
 header, main, footer {
   padding-left: 300px;
