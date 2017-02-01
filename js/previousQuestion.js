@@ -1,6 +1,5 @@
 function goToPreviousQuestion(id){
   id--;
-  console.log(id);
   let url=window.location.href;
   let base=url.split(/\d/)[0]
   let newUrl= url.split("/")

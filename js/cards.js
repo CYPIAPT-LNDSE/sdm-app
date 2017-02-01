@@ -109,14 +109,25 @@ $(document).ready(function(){
         }
 
     }});
+    $('.hbs-container').append(html);
+    /*JS and jquery to ensure that for the first question we don't have a previous button and
+    for the last question we don't have a next button*/
     let url=window.location.href;
     let newUrl= url.split("/")
     let key=newUrl.pop();
-    console.log(key);
     let num=key.split("=")[1]||1;
-    console.log(num);
+    if (num===1) {
+       $('.prev').hide();
+       $('.next').show();
+   } else if (num==6) {
+       $('.next').hide();
+       $('.prev').show();
+   } else {
+       $('.prev').show();
+       $('.next').show();
+   }
     // add result to the page:
-    $('.hbs-container').append(html);
+
     $('.card').matchHeight();
     $('.card-name').matchHeight();
 });
