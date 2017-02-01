@@ -9,6 +9,7 @@ body {
     padding: 0;
 }
 
+/* Text container */
 
 .img-container {
     margin: 0;
@@ -16,4 +17,10 @@ body {
     position: relative;
     width: 100%;
     height: 100vw;
+}
+
+.text-container {
+    position: absolute;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
 }
