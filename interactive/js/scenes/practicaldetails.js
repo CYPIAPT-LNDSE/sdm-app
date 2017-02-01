@@ -1,31 +1,74 @@
 // BackgroundColor = #a5d6a7
 // TextColor = #FFFFFF
+/* Text =
+This basic support will give you practical
+strategies to help you
+feel better.
+
+You’ll also receive advice about things
+like sleep, diet and
+exercise.
+
+*/
 
 function practicalDetailsScene () {
   // Styles
+
+  var newTextPosition = {
+    width: "80%",
+    top: "10%",
+    left: "35%"
+  }
+
+  var newPracticalListSmallPosition = {
+    width: "35%",
+    left: "25%",
+    top: "66%",
+  }
+
+  var practicalListDetailedPosition = {
+    width: "11%",
+    left: "50%",
+    top: "50%"
+  }
+
+  var newPracticalListDetailedPosition = {
+    width: "38%",
+    left: "25%",
+    top: "66%",
+    opacity: 1
+  }
+
 
 
   // BackgroundChange
   TweenMax.to("#background", 1, {backgroundColor: "#a5d6a7"});
 
   // Timeline
-  // TL.to("#textcontainer", 1, {opacity: 0, onComplete: changeText})
-  //   .to("#dogheadfacingfront", 1, {x: "270px"}, "-=0.7")
-  //   .to("#dogbodyfacingfront", 1, {x: "260px"}, "-=1.05")
-  //   .to("#dogheadfacingfront", 0, {opacity: 0})
-  //   .to("#dogheadfacingleft", 0, turnHeadToOptions)
-  //   .to("#miscmirrorwithdog", .2, practicalMirror, "+=0.5")
-  //   .to("#bdogbodyfacingfront", .2, bDogBody)
-  //   .to("#bdogheadfacingright", .2, bDogHead, "-=0.1")
-  //   .to("#miscdogbowl", .2, dogBowlOption, "-=0.1")
-  //   .to("#practicaloptiontext", 0.3, practicalOptionText, "-=.4")
-  //   .to("#talkingoptiontext", 0.3, talkingOptionText, "-=.2")
-  //   .to("#medicationoptiontext", 0.3, medicalOptionText, "-=.1")
-  //   .to("#textcontainer", 1, {opacity: 1}, "-=.3");
+  TL.to("#textcontainer", 1, {opacity: 0, onComplete: changeTextAndPosition})
+    .to("#dogheadfacingright", 1.5, {x: "-600px", opacity: 0}, "dogstoside-=.7")
+    .to("#dogbodyfacingfront", .8, {x: "-600px", opacity: 0}, "dogstoside-=.7")
+    .to("#bdogheadfacingleft", 1.5, {x: "600px", opacity: 0}, "dogstoside-=.7")
+    .to("#bdogbodyfacingfront", .8, {x: "600px", opacity: 0}, "dogstoside-=.7")
+    .to("#miscpracticallistsmall", .5, {opacity: 0}, "dogstoside")
+    .to("#miscpracticallistdetailed", 0, practicalListDetailedPosition, "listfade-=.7")
+    .to("#miscpracticallistdetailed", .2, newPracticalListDetailedPosition, "listfade-=.7")
+    .to("#textcontainer", 1.5, {opacity: 1}, "-=.3");
 
-    // TextChange
-    // function changeText () {
-    //   $("#textcontainer").text("Click one of the options to find out more");
-    // }
+
+
+    function changeTextAndPosition () {
+      changeText();
+      changeTextPosition();
+    }
+
+
+    function changeTextPosition(){
+      TweenMax.to("#textcontainer", 0, newTextPosition);
+    }
+
+    function changeText () {
+      $("#textcontainer").text("This basic support will give you practical strategies to help you feel better... You’ll also receive advice about things like sleep, diet and exercise.");
+    }
 
 }
