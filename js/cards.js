@@ -30,7 +30,7 @@ $(document).ready(function(){
         treatments: {
           practical_support:{
             name: "Practical Support",
-            icon: "./img/practical_support2.jpg"
+            icon: "./img/practical_support4.jpg"
           },
           talking_therapy:{
             name: "Talking Therapy",
@@ -38,7 +38,7 @@ $(document).ready(function(){
           },
           medication:{
             name: "Medication",
-            icon: "./img/medication2.jpg"
+            icon: "./img/medication3.png"
           }
         },
         questions:{

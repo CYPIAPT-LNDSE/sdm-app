@@ -6,6 +6,9 @@ body nav li a{
   height: auto !important
 }
 
+nav{
+  border-bottom: 0.35em solid black;
+}
 .no-hover:hover {
   background-color: inherit !important;
 }
