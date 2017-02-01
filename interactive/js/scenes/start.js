@@ -31,7 +31,7 @@
   $("#dogheadfacingfront").css(dogHeadCenter);
 
   // Animations
-  TweenMax.to("#imgcontainer", 0, {backgroundColor: "#4FC3F7"});
+  TweenMax.to("#background", 0, {backgroundColor: "#4FC3F7"});
   TweenMax.to(["#dogbodyfacingfront", "#dogheadfacingfront"], 0.3, {delay: 1, opacity: 1});
   TweenMax.to("#dogbodyfacingfront", 0.8, {delay: 0.6, top: "50%"});
   TweenMax.to("#dogheadfacingfront", 0.8, {delay: 0.7, top: "37%"});

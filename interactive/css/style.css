@@ -44,6 +44,16 @@ body {
     font-size: 30px;
 }
 
+/* Background */
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 /* SVG Styles */
 .svg-part {
     position: absolute;

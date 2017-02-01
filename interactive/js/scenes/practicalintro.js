@@ -36,7 +36,7 @@ function practicalIntroScene () {
 
 
   // BackgroundChange
-  TweenMax.to("#imgcontainer", 1, {backgroundColor: "#FAFAFA"});
+  TweenMax.to("#background", 1, {backgroundColor: "#FAFAFA"});
   TweenMax.to("#practicaloptiontext", 1, {opacity: 0});
   TweenMax.to("#talkingoptiontext", 1, {opacity: 0});
   TweenMax.to("#medicationoptiontext", 1, {opacity: 0});

@@ -56,7 +56,7 @@ function optionsScene () {
   }
 
   // BackgroundChange
-  TweenMax.to("#imgcontainer", 1, {backgroundColor: "#26C6DA"});
+  TweenMax.to("#background", 1, {backgroundColor: "#26C6DA"});
 
   // Timeline
   var tl = new TimelineLite();
