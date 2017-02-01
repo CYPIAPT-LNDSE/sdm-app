@@ -17,6 +17,7 @@ body nav li a{
 
 h1{
   margin-top: 0.5em;
+  cursor: default;
 }
 
 .no-hover:hover {
@@ -45,4 +46,9 @@ nav {
 
 .icon-green {
   color: #9e9e9e ;
+}
+
+h4{
+  color:#9e9e9e ;
+  cursor: default;
 }
