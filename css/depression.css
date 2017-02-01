@@ -23,16 +23,17 @@ h1{
   position: absolute;
   left:12%;
   right:12%;
-  top:20%;
+  top:25%;
   font-weight: 400;
   font-size: 2em;
   color: rgb(84, 133, 185);
 }
-
-.btn {
+h2 {
   position: absolute;
-  top:60%;
-  left:60%;
+  left:12%;
+  right:12%;
+  top:10%;
+
 }
 .nav {
   background-color: rgb(84, 133, 185) !important;
@@ -42,5 +43,5 @@ h1{
 }
 
 body{
-  background-image: url('../img/04.jpg');
+  background-image: url('../img/01.jpg');
 }
