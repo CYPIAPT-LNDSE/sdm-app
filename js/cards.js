@@ -1,3 +1,23 @@
+/* We have an overcomplecated data structure for the questions and treatment options.
+I needed some way to unambigously select the question that I  want to display. So I
+introduced an ID for every question (1-6 for now). I append this ID to the end of the url, and
+this was I always display the questtion I want.
+
+We have 3 templates:
+- 3card layout: when the answer for all three treatment options is different from each other
+In our case question 1-3
+- 2 card layout 1: when the answer is the same for the first two treatment options, and different for the 3rd one
+question 4
+- 2 card layout 2: when the 1st treatment option is unique, but the answer for the 2nd and 3rd options is the same.
+queestion 5-6
+
+The link below builds up the next url and increments the scrt_var, which keeps track of
+the current question ID, and uses an if statement to decide which template should be used to display
+the next question.
+
+I agree that this is ugly. I considered using an eventListener...but I couldn't figure out
+how I can keep track of the question id*/
+
 // get the template
 $(document).ready(function(){
     var source   = $("#template-hbs").html();
@@ -10,15 +30,15 @@ $(document).ready(function(){
         treatments: {
           practical_support:{
             name: "Practical Support",
-            icon: "../static/img/practical_support2.jpg"
+            icon: "./img/practical_support2.jpg"
           },
           talking_therapy:{
             name: "Talking Therapy",
-            icon:"../static/img/talking_therapy2.png"
+            icon:"./img/talking_therapy2.png"
           },
           medication:{
             name: "Medication",
-            icon: "../static/img/medication2.jpg"
+            icon: "./img/medication2.jpg"
           }
         },
         questions:{
@@ -89,10 +109,25 @@ $(document).ready(function(){
         }
 
     }});
-
-
-    // add result to the page:
     $('.hbs-container').append(html);
+    /*JS and jquery to ensure that for the first question we don't have a previous button and
+    for the last question we don't have a next button*/
+    let url=window.location.href;
+    let newUrl= url.split("/")
+    let key=newUrl.pop();
+    let num=key.split("=")[1]||1;
+    if (num===1) {
+       $('.prev').hide();
+       $('.next').show();
+   } else if (num==6) {
+       $('.next').hide();
+       $('.prev').show();
+   } else {
+       $('.prev').show();
+       $('.next').show();
+   }
+    // add result to the page:
+
     $('.card').matchHeight();
     $('.card-name').matchHeight();
 });

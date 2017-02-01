@@ -1,7 +1,5 @@
 Handlebars.registerHelper('getQuestion', function(questions, options) {
   let id = window.location.href.split("=")[1] || 1;
-  console.log("id",id);
-  console.log(questions[id]);
   return questions[id].question;
 });
 

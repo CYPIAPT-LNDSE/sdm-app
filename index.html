@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
@@ -9,35 +8,34 @@
   <meta charset="utf-8">
   <title>sdm-app</title>
 </head>
-
 <body>
-  <nav class="blue lighten-4">
-    <h1 class="brand-logo center icon-green">SDMAPP</h1>
+  <nav class="transparent">
+    <h1 class="brand-logo center color-gray margintop05em default-cursor">SDMAPP</h1>
     <ul class="right">
-      <li><a class="no-hover" href=#><i class="material-icons icon-green">home</i></a></ul>
+      <li><a class="no-hover" href="./index.html"><i class="material-icons color-gray">home</i></a></ul>
         <ul id="slide-out" class="side-nav" class="collection">
-          <li><a class="no-hover"><h4>Questions</h4></a></li>
-          <li><a>What will this involve?</a></li>
+          <li><a class="no-hover default-cursor"><h4 class="color-gray">Questions</h4></a></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(0);return false;">What will this involve?</a></li>
+          <li class="divider" ></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(1);return false;">How will this help me get better?</a></li>
           <li class="divider"></li>
-          <li><a>How will this help me get better?</a></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(2);return false;">Will I see the same people for the duration of this help or support?</a></li>
           <li class="divider"></li>
-          <li><a>Will I see the same people for the duration of this help or support?</a></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(3);return false;">Can I use other types of support alongside this?</a></li>
           <li class="divider"></li>
-          <li><a>Can I use other types of support alongside this?</a></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(4);return false;">Are there risks or side effects from this type of help or support?</a></li>
           <li class="divider"></li>
-          <li><a>Are there risks or side effects from this type of help or support?</a></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(5);return false;">Where can I get this support?</a></li>
           <li class="divider"></li>
-          <li><a>Where can I get this support?</a></li>
-          <li class="divider"></li>
-
-          </ul>
-          <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons icon-green ">menu</i></a>
-        </nav>
-          <div class="centertext">This application intends to provide you with information<br>
-          about the available treatments for your disorder;<br> so you can make a calculated decision regarding the treatment that most suits you. </div>
-          <a href="./depression.html" class="waves-effect waves-light btn-large btn">START HERE</a></div>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons color-gray ">menu</i></a>
+      </nav>
+      <div class="centertext">This application intends to provide you with information<br>
+        about the available treatments for your disorder;<br> so you can make a calculated decision regarding the treatment that most suits you. </div>
+        <a href="./depression.html" class="waves-effect waves-light btn-large btn">START HERE</a>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/nextQuestion.js"></script>
       </body>
       </html>
