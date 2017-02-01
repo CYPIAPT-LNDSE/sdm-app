@@ -1,4 +1,4 @@
 var globalState = {
-  currentscene: "",
-  nextscene: ""
+  currentscene: "introduction",
+  nextscene: "options"
 }
