@@ -1,21 +1,16 @@
 body{
   background-image: url('../img/Bubble.png');
 }
-header, main, footer {
-  padding-left: 300px;
-}
 
-@media only screen and (max-width : 992px) {
-  header, main, footer {
-    padding-left: 0;
-  }
-}
 body nav li a{
   height: auto !important
 }
 
-h1{
+.margintop05em {
   margin-top: 0.5em;
+}
+
+.default-cursor{
   cursor: default;
 }
 
@@ -39,15 +34,17 @@ h1{
   top:60%;
   left:60%;
 }
-nav {
-  border-bottom: black solid 3px !important;
-}
 
-.icon-green {
+.color-gray {
   color: #9e9e9e ;
 }
 
-h4{
-  color:#9e9e9e ;
-  cursor: default;
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
 }
