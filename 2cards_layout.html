@@ -17,14 +17,38 @@
 </head>
 <body>
 
+  <nav class="blue lighten-4">
+    <h1 class="brand-logo center icon-green">SDMAPP</h1>
+    <ul class="right">
+      <li><a class="no-hover" href="./index.html"><i class="material-icons icon-green">home</i></a></ul>
+        <ul id="slide-out" class="side-nav" class="collection">
+          <li><a class="no-hover"><h4>Questions</h4></a></li><!--Esraa why is this a link? Where should it point to?(Nóri)-->
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(0);return false;">What will this involve?</a></li>
+          <li class="divider" ></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(1);return false;">How will this help me get better?</a></li>
+          <li class="divider"></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(2);return false;">Will I see the same people for the duration of this help or support?</a></li>
+          <li class="divider"></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(3);return false;">Can I use other types of support alongside this?</a></li>
+          <li class="divider"></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(4);return false;">Are there risks or side effects from this type of help or support?</a></li>
+          <li class="divider"></li>
+          <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(5);return false;">Where can I get this support?</a></li>
+          <li class="divider"></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons icon-green ">menu</i></a>
+      </nav>
+
   <section class="hbs-container"></section>
 
   <!-- actual client side template -->
   <script id="template-hbs" type="text/x-handlebars-template">
     <div class="row s12">
       <div class="card-title">
-      <h2>{{getQuestion questions}}</h2>
-    </div>
+        <div class="question">
+        <h2>{{getQuestion questions}}</h2>
+      </div>
+      </div>
       <div class="col s12 m4 l4">
         <div class="card horizontal">
           <div class="card-image">
@@ -36,7 +60,7 @@
               <p>{{getPracticalSupport questions}}</p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a href="#">Save it!</a>
             </div>
           </div>
         </div>
@@ -46,14 +70,14 @@
         <div class="card horizontal">
           <div class="card-image-duo">
             <div class="card-title">
-            <h4>{{treatments.talking_therapy.name}}</h4>
-          </div>
+              <h4>{{treatments.talking_therapy.name}}</h4>
+            </div>
             <img src={{treatments.talking_therapy.icon}} alt="" />
           </div>
           <div class="card-image-duo">
             <div class="card-title">
-            <h4>{{treatments.medication.name}}</h4>
-          </div>
+              <h4>{{treatments.medication.name}}</h4>
+            </div>
             <img src={{treatments.medication.icon}} alt="" />
           </div>
           <div class="card-stacked-duo">
@@ -61,12 +85,13 @@
               <p>{{getTalkingTherapy questions}}</p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
+              <a href="#">Save it!</a>
             </div>
           </div>
         </div>
       </div>
-      <a href="3cards_layout.html" id="next" onclick="gotToNextQuestion(scrt_var);return false;">Go to the next question</a>
+      <a class="waves-effect waves-light btn-large prev" href="3cards_layout.html" id="next" onclick="goToPreviousQuestion(scrt_var);return false;">Previous question<i class="material-icons left rotate_180">send</i></a>
+        <a class="waves-effect waves-light btn-large next" href="3cards_layout.html" id="next" onclick="gotToNextQuestion(scrt_var);return false;">Next question<i class="material-icons right">send</i></a>
     </div>
 
   </script>
@@ -78,7 +103,8 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script src="js/helper.js"></script>
   <script type="text/javascript" src="js/cards.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
   <script type="text/javascript" src="js/nextQuestion.js"></script>
-
+  <script type="text/javascript" src="js/previousQuestion.js"></script>
 </body>
 </html>
