@@ -1,5 +1,18 @@
 # sdm-app
 
+## Problem
+Our clients take part in a program that encourages clinicians and patients to make a shared decision about the treatment that the patient will receive. Our clients have worked closely together with clinicians
+and collected the most common questions that patients ask about their treatment option. They have collected data
+on several mental health conditions. During the design sprint we work with the data collected on depression.
+
+**Problems that the app helps to tackle:**
+
+Problems that currently exist/goals |   How our app can help to solve them     |
+:------------------------------:|:----------------------------------:|
+  if  doctors are not experts in the condition, they feel uncomfortable to talk about it.   |     Our app presents brief, unbiased information about the available treatments.     |
+Children with certain conditions (e.g. ADHD) feel overwhelmed if they receive a grid (leaflet) explaining their options.| The app has a gamified journey option where they receive the information step-by-step alongside with visual explanation.|
+The target audience is children aged 12-18, but it would be nice if the app can be used to inform parents. | We have plain version with simplified design, where the main focus is sharing information.|
+
 ### User journey:
 
 As a clinician,  
@@ -28,10 +41,10 @@ As a young person suffering from depression,
 I would like to be able to keep track of the options I am interested in,  
 so I can discuss them with my clinician afterwards.  
 
-
-#### Microframeworks and libraries we use
-
-- materialize  
-- jQuery  
-- [jquery.matchHeight.js](https://github.com/liabru/jquery-match-height)  
-- [client side handlebars tips](http://stackoverflow.com/questions/33059203/error-missing-helper-in-handlebars-js)
+### Future plans:
+- make a progressive web app with an indexDB database, so that the app would work
+without internet connection.
+- we worked with a shortened question set, implement the extended one for depression.
+- implement the animated version of talking therapy and medication for depression.
+- implement both the animated and plain version of the treatments for
+ the other conditions like ADHD, challenging behaviour, self-harm, low mood and anxiety.
