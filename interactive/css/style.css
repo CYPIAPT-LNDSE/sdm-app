@@ -27,8 +27,8 @@ body {
 /* SVG Styles */
 .svg-part {
     position: absolute;
-    /*transform: translate(-50%, -50%);
-    opacity: 0;*/
+    transform: translate(-50%, -50%);
+    opacity: 0;
 }
 
 /* Width Helpers */
