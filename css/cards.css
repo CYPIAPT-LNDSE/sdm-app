@@ -31,6 +31,14 @@ body nav li a{
   display: block;
   max-width: 65% !important;
 }
+
+.rotate_180{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
 /*.card-name{
   border:1px solid black;
 }*/
