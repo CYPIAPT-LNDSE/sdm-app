@@ -127,7 +127,6 @@ $(document).ready(function(){
        $('.next').show();
    }
     // add result to the page:
-
     $('.card').matchHeight();
     $('.card-name').matchHeight();
 });

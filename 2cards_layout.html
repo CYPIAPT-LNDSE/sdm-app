@@ -44,15 +44,17 @@
   <!-- actual client side template -->
   <script id="template-hbs" type="text/x-handlebars-template">
     <div class="row s12">
-      <div class="card-title">
+
         <div class="question">
         <h2>{{getQuestion questions}}</h2>
       </div>
-      </div>
+
       <div class="col s12 m12 l4">
         <div class="card horizontal">
           <div class="card-image">
+              <div class="card-name">
             <h4>{{treatments.practical_support.name}}</h4>
+            </div>
             <img src={{treatments.practical_support.icon}} alt="" />
           </div>
           <div class="card-stacked">
@@ -70,13 +72,13 @@
         <div class="card horizontal">
           <div class="try">
           <div class="card-image-duo">
-            <div class="card-title">
+            <div class="card-name">
               <h4>{{treatments.talking_therapy.name}}</h4>
             </div>
             <img src={{treatments.talking_therapy.icon}} alt="" />
           </div>
           <div class="card-image-duo">
-            <div class="card-title">
+            <div class="card-name">
               <h4>{{treatments.medication.name}}</h4>
             </div>
             <img src={{treatments.medication.icon}} alt="" />

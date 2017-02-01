@@ -66,6 +66,8 @@ body nav li a{
 }
 .card-name{
   border:1px solid purple;
+  text-align: center;
+  vertical-align: middle;
 }
 .question{
   border:solid black 1px;
