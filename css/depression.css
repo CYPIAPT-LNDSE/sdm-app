@@ -1,0 +1,47 @@
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+body nav li a{
+  height: auto !important
+}
+
+h1{
+  margin-top: 0.5em;
+}
+
+.no-hover:hover {
+  background-color: inherit !important;
+}
+
+.centertext {
+  position: absolute;
+  left:12%;
+  right:12%;
+  top:25%;
+  font-weight: 400;
+  font-size: 2em;
+  color: rgb(84, 133, 185);
+}
+h2 {
+  position: absolute;
+  left:12%;
+  right:12%;
+  top:10%;
+
+}
+.nav {
+  background-color: rgb(84, 133, 185) !important;
+}
+.icon-green {
+  color: #00897b;
+}
+
+body{
+  background-image: url('../img/01.jpg');
+}
