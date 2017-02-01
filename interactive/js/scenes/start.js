@@ -22,25 +22,19 @@
     "width": "11%"
   }
 
-  // Text Pre Set
+  // Text Pre-Set
   $("#textcontainer").css(textContainerBottomCenter);
   $("#textcontainer").text("I'd like to present you with three options for treating Depression");
 
-  // Center Dog Pre Set
+  // Center Dog Pre-Set
   $("#dogbodyfacingfront").css(dogBodyCenter);
   $("#dogheadfacingfront").css(dogHeadCenter);
 
   // Animations
-  TweenMax.to("#background", 0, {backgroundColor: "#4FC3F7"});
-  TweenMax.to(["#dogbodyfacingfront", "#dogheadfacingfront"], 0.3, {delay: 1, opacity: 1});
-  TweenMax.to("#dogbodyfacingfront", 0.8, {delay: 0.6, top: "50%"});
-  TweenMax.to("#dogheadfacingfront", 0.8, {delay: 0.7, top: "37%"});
-  TweenMax.to("#textcontainer", 1, {delay: 1.8, color: "white", opacity: 1});
+  TL.to("#background", 1, {backgroundColor: "#4FC3F7"}, 0);
+  TL.to(["#dogbodyfacingfront", "#dogheadfacingfront"], 0.3, {opacity: 1}, 0);
+  TL.to("#dogbodyfacingfront", 0.8, {top: "50%"}, 0);
+  TL.to("#dogheadfacingfront", 0.8, {top: "37%"},0);
+  TL.to("#textcontainer", 1, {color: "white", opacity: 1}, .8);
 
-
-  //
-  // Set Up globalState
-  //
-  globalState.currentscene = "introduction";
-  globalState.nextscene = "options";
 })();

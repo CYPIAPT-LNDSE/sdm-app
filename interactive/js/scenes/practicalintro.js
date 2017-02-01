@@ -33,8 +33,6 @@ function practicalIntroScene () {
   }
 
 
-
-
   // BackgroundChange
   TweenMax.to("#background", 1, {backgroundColor: "#FAFAFA"});
   TweenMax.to("#practicaloptiontext", 1, {opacity: 0});
@@ -44,14 +42,12 @@ function practicalIntroScene () {
 
 
   // Timeline
-  var tl = new TimelineLite();
-  tl.to("#textcontainer", 0.5, {opacity: 0, onComplete: change})
+  TL.to("#textcontainer", 0.5, {opacity: 0, onComplete: change})
     .to("#dogheadfacingleft", 0, {opacity: 0}, "+=.8")
     .to("#bdogheadfacingright", 0, {opacity: 0, onComplete: enterNewHeads})
     .to("#textcontainer", 1, {opacity: 1, color: "#0097A7"}, "-=.3")
     .to("#miscpracticallistsmall", 0, practicalListSmallCenter, "-=0.5")
     .to("#miscpracticallistsmall", 1.5, {width: "8%"});
-  //
 
     function change () {
       changeText();

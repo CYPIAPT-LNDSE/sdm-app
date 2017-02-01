@@ -59,8 +59,7 @@ function optionsScene () {
   TweenMax.to("#background", 1, {backgroundColor: "#26C6DA"});
 
   // Timeline
-  var tl = new TimelineLite();
-  tl.to("#textcontainer", 1, {opacity: 0, onComplete: changeText})
+  TL.to("#textcontainer", 1, {opacity: 0, onComplete: changeText})
     .to("#dogheadfacingfront", 1, {x: "270px"}, "-=0.7")
     .to("#dogbodyfacingfront", 1, {x: "260px"}, "-=1.05")
     .to("#dogheadfacingfront", 0, {opacity: 0})
@@ -79,9 +78,4 @@ function optionsScene () {
       $("#textcontainer").text("Click one of the options to find out more");
     }
 
-    //
-    // Set Up globalState
-    //
-    globalState.currentscene = "options";
-    globalState.nextscene = "";
 }

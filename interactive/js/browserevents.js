@@ -1,4 +1,4 @@
-// Events
+// Browser Events
 
 
 // Background Click
@@ -11,6 +11,7 @@ $("#background").on("click", function() {
 // Dog Head (Intro)
 $("#dogheadfacingfront").on("click", function() {
   if (globalState.currentscene == "introduction") {
+    globalState.currentscene = "options";
     optionsScene();
   }
 });
@@ -19,6 +20,7 @@ $("#dogheadfacingfront").on("click", function() {
 // Mirror (Practical Scene)
 $("#miscmirrorwithdog").on("click", function() {
   if (globalState.currentscene == "options") {
+    globalState.currentscene = "practicalintro";
     practicalIntroScene();
   }
 });
@@ -28,12 +30,9 @@ $("#miscmirrorwithdog").on("click", function() {
 
 // Switch scene
 function switchScene() {
-
-  var scene = globalState.currentscene;
-
-  switch (scene) {
+  switch (globalState.currentscene) {
     case "introduction" : {
-      scene = "options";
+      globalState.currentscene = "options";
       optionsScene();
       break;
     }
