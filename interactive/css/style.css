@@ -1,0 +1,19 @@
+/* Resets */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.img-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100vw;
+}
