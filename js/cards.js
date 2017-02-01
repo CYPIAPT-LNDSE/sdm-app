@@ -109,8 +109,12 @@ $(document).ready(function(){
         }
 
     }});
-
-
+    let url=window.location.href;
+    let newUrl= url.split("/")
+    let key=newUrl.pop();
+    console.log(key);
+    let num=key.split("=")[1]||1;
+    console.log(num);
     // add result to the page:
     $('.hbs-container').append(html);
     $('.card').matchHeight();

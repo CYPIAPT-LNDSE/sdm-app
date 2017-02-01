@@ -1,7 +1,6 @@
 function gotToNextQuestion(id){
   id++;
   let url=window.location.href;
-  let base=url.split(/\d/)[0]
   let newUrl= url.split("/")
   newUrl.pop();
   newUrl=newUrl.join('/').replace(" ","");
