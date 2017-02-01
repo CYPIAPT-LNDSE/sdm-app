@@ -1,5 +1,5 @@
 body{
-  background-image: url('../img/Bubble.png');
+  background-image: url('../img/Bubble.png'); <!--need it for cards-->
 }
 
 body nav li a{
@@ -30,7 +30,7 @@ body nav li a{
 }
 
 .color-gray {
-  color: #9e9e9e ;
+  color: #9e9e9e ; <!--need it for cards-->
 }
 
 /*start here button on landing page*/
