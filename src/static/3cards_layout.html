@@ -23,13 +23,15 @@
   <script id="template-hbs" type="text/x-handlebars-template">
     <div class="row s12">
       <h2>{{getQuestion questions}}</h2>
-      <div class="col s12 m4 l4">
+      <div class="col s12 m12 l4">
         <div class="card horizontal">
           <div class="card-image">
             <div class="card-name">
-            <h5>{{treatments.practical_support.name}}</h5>
-          </div>
-            <img src={{treatments.practical_support.icon}} alt="" />
+              <h5>{{treatments.practical_support.name}}</h5>
+            </div>
+            <div class="card-logo">
+              <img src={{treatments.practical_support.icon}} alt="" />
+            </div>
           </div>
           <div class="card-stacked">
             <div class="card-content">
@@ -42,13 +44,15 @@
         </div>
       </div>
 
-      <div class="col s12 m4 l4">
+      <div class="col s12 m12 l4">
         <div class="card horizontal">
           <div class="card-image">
             <div class="card-name">
-            <h5>{{treatments.talking_therapy.name}}</h5>
-          </div>
-            <img src={{treatments.talking_therapy.icon}} alt="" />
+              <h5>{{treatments.talking_therapy.name}}</h5>
+            </div>
+            <div class="card-logo">
+              <img src={{treatments.talking_therapy.icon}} alt="" />
+            </div>
           </div>
           <div class="card-stacked">
             <div class="card-content">
@@ -61,13 +65,15 @@
         </div>
       </div>
 
-      <div class="col s12 m4 l4">
+      <div class="col s12 m12 l4">
         <div class="card horizontal">
           <div class="card-image">
             <div class="card-name">
-            <h5>{{treatments.medication.name}}</h5>
-          </div>
-            <img src={{treatments.medication.icon}} alt="" />
+              <h5>{{treatments.medication.name}}</h5>
+            </div>
+            <div class="card-logo">
+              <img src={{treatments.medication.icon}} alt="" />
+            </div>
           </div>
           <div class="card-stacked">
             <div class="card-content">
@@ -79,8 +85,8 @@
           </div>
         </div>
       </div>
-    <!--  <a href="3cards_layout.html" onclick="location.href=this.href+'?key='+ ++scrt_var;return false;">Go to the next question</a>-->
-     <a href="3cards_layout.html" onclick='if(scrt_var<3){location.href=this.href+"?key="+ ++scrt_var}else{location.href="file:///home/nori/FAC/sdm-app/src/static/"+"2cards_layout.html?key="+ ++scrt_var};return false;'>Go to the next question</a>
+      <!--  <a href="3cards_layout.html" onclick="location.href=this.href+'?key='+ ++scrt_var;return false;">Go to the next question</a>-->
+      <a href="3cards_layout.html" onclick='if(scrt_var<3){location.href=this.href+"?key="+ ++scrt_var}else{location.href="file:///home/nori/FAC/sdm-app/src/static/"+"2cards_layout.html?key="+ ++scrt_var};return false;'>Go to the next question</a>
     </div>
 
   </script>

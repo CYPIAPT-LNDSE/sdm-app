@@ -22,14 +22,18 @@
   <!-- actual client side template -->
   <script id="template-hbs" type="text/x-handlebars-template">
     <div class="row s12">
-      <div class="card-title">
-      <h2>{{getQuestion questions}}</h2>
-    </div>
-      <div class="col s12 m4 l4">
+      <div class="scard-name">
+        <h2>{{getQuestion questions}}</h2>
+      </div>
+      <div class="col s12 m12 l4">
         <div class="card horizontal">
           <div class="card-image">
-            <h4>{{treatments.practical_support.name}}</h4>
-            <img src={{treatments.practical_support.icon}} alt="" />
+            <div class="card-name">
+              <h5>{{treatments.practical_support.name}}</h5>
+            </div>
+            <div class="card-logo">
+              <img src={{treatments.practical_support.icon}} alt="" />
+            </div>
           </div>
           <div class="card-stacked">
             <div class="card-content">
@@ -42,19 +46,23 @@
         </div>
       </div>
 
-      <div class="col s12 m8 l8">
+      <div class="col s12 m12 l8">
         <div class="card horizontal">
           <div class="card-image-duo">
-            <div class="card-title">
-            <h4>{{treatments.talking_therapy.name}}</h4>
-          </div>
-            <img src={{treatments.talking_therapy.icon}} alt="" />
+            <div class="card-name">
+              <h5>{{treatments.talking_therapy.name}}</h5>
+            </div>
+            <div class="card-logo">
+              <img src={{treatments.talking_therapy.icon}} alt="" />
+            </div>
           </div>
           <div class="card-image-duo">
-            <div class="card-title">
-            <h4>{{treatments.medication.name}}</h4>
-          </div>
-            <img src={{treatments.medication.icon}} alt="" />
+            <div class="card-name">
+              <h5>{{treatments.medication.name}}</h5>
+            </div>
+            <div class="card-logo">
+              <img src={{treatments.medication.icon}} alt="" />
+            </div>
           </div>
           <div class="card-stacked-duo">
             <div class="card-content">
@@ -66,8 +74,8 @@
           </div>
         </div>
       </div>
-    <!--  <a href="3cards_layout.html" onclick="location.href=this.href+'?key='+ ++scrt_var;return false;">Go to the next question</a>-->
-     <a href="3cards_layout.html" onclick='location.href="file:///home/nori/FAC/sdm-app/src/static/"+"2cards_layout_b.html?key="+ ++scrt_var;return false;'>Go to the next question</a>
+      <!--  <a href="3cards_layout.html" onclick="location.href=this.href+'?key='+ ++scrt_var;return false;">Go to the next question</a>-->
+      <a href="3cards_layout.html" onclick='location.href="file:///home/nori/FAC/sdm-app/src/static/"+"2cards_layout_b.html?key="+ ++scrt_var;return false;'>Go to the next question</a>
     </div>
 
   </script>
