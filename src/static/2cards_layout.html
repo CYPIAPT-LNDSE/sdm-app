@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/cards.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <title>sdm-app</title>
+  <script language="javascript" type="text/javascript">
+  var scrt_var = window.location.href.split("=")[1] || 1;
+
+  </script>
+</head>
+<body>
+
+  <section class="hbs-container"></section>
+
+  <!-- actual client side template -->
+  <script id="template-hbs" type="text/x-handlebars-template">
+    <div class="row s12">
+      <div class="card-title">
+      <h2>{{getQuestion questions}}</h2>
+    </div>
+      <div class="col s12 m4 l4">
+        <div class="card horizontal">
+          <div class="card-image">
+            <h4>{{treatments.practical_support.name}}</h4>
+            <img src={{treatments.practical_support.icon}} alt="" />
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>{{getPracticalSupport questions}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m8 l8">
+        <div class="card horizontal">
+          <div class="card-image-duo">
+            <div class="card-title">
+            <h4>{{treatments.talking_therapy.name}}</h4>
+          </div>
+            <img src={{treatments.talking_therapy.icon}} alt="" />
+          </div>
+          <div class="card-image-duo">
+            <div class="card-title">
+            <h4>{{treatments.medication.name}}</h4>
+          </div>
+            <img src={{treatments.medication.icon}} alt="" />
+          </div>
+          <div class="card-stacked-duo">
+            <div class="card-content">
+              <p>{{getTalkingTherapy questions}}</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="3cards_layout.html" id="next" onclick="gotToNextQuestion(scrt_var);return false;">Go to the next question</a>
+    </div>
+
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="js/helper.js"></script>
+  <script type="text/javascript" src="js/cards.js"></script>
+  <script type="text/javascript" src="js/nextQuestion.js"></script>
+
+</body>
+</html>
