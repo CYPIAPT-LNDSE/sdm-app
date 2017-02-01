@@ -10,15 +10,15 @@ $(document).ready(function(){
         treatments: {
           practical_support:{
             name: "Practical Support",
-            icon: "../static/img/practical_support2.jpg"
+            icon: "./img/practical_support2.jpg"
           },
           talking_therapy:{
             name: "Talking Therapy",
-            icon:"../static/img/talking_therapy2.png"
+            icon:"./img/talking_therapy2.png"
           },
           medication:{
             name: "Medication",
-            icon: "../static/img/medication2.jpg"
+            icon: "./img/medication2.jpg"
           }
         },
         questions:{
