@@ -33,6 +33,9 @@ body nav li a{
   max-width:35% !important;
   border:solid green 1px;
 }
+.card-content{
+  vertical-align: middle;
+}
 .next{
   float:right;
   max-width: 45% !important;
@@ -44,6 +47,7 @@ body nav li a{
 .card-stacked{
   display: block;
   max-width: 65% !important;
+  height: 100%;
 }
 
 .try{
@@ -55,6 +59,11 @@ body nav li a{
 .card-stacked-duo{
   display: block;
   max-width: 65% !important;
+  height:100%;
+  vertical-align: middle;
+}
+.card-content{
+  vertical-align: middle;
 }
 
 .rotate_180{
@@ -67,8 +76,10 @@ body nav li a{
 .card-name{
   border:1px solid purple;
   text-align: center;
-  vertical-align: middle;
+
+  background-color: red;
 }
+
 .question{
   border:solid black 1px;
   margin: 1.5em auto;

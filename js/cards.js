@@ -129,4 +129,5 @@ $(document).ready(function(){
     // add result to the page:
     $('.card').matchHeight();
     $('.card-name').matchHeight();
+    $('.card-height').matchHeight();
 });

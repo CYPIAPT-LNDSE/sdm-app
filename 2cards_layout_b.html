@@ -50,7 +50,7 @@
         <div class="card horizontal">
           <div class="try">
           <div class="card-image-duo">
-            <div class="card-name">
+            <div class="card-name card-height">
               <h4>{{treatments.practical_support.name}}</h4>
             </div>
             <img src={{treatments.practical_support.icon}} alt="" />
@@ -66,14 +66,14 @@
             <div class="card-content">
               <p>{{getPracticalSupport questions}}</p>
             </div>
-            <div class="card-action">
+            <!--<div class="card-action">
               <a href="#">Save it!</a>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>
 
-      <div class="col s12 m12 l4">
+    <!--  <div class="col s12 m12 l4">
         <div class="card horizontal">
           <div class="card-image">
             <div class="card-name">
@@ -90,7 +90,27 @@
             </div>
           </div>
         </div>
+      </div>-->
+
+      <div class="col s12 m12 l4">
+        <div class="card horizontal">
+          <div class="card-image">
+            <div class="card-name card-height">
+              <h5>{{treatments.medication.name}}</h5>
+            </div>
+            <img src={{treatments.medication.icon}} alt="" />
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>{{getMedication questions}}</p>
+            </div>
+            <!--<div class="card-action">
+              <a href="#">Save it!</a>
+            </div>-->
+          </div>
+        </div>
       </div>
+
       <div class="redirect">
       <a class="waves-effect waves-light btn-large prev" href="3cards_layout.html" id="next" onclick="goToPreviousQuestion(scrt_var);return false;">Previous question<i class="material-icons left rotate_180">send</i></a>
         <a class="waves-effect waves-light btn-large next" href="3cards_layout.html" id="next" onclick="gotToNextQuestion(scrt_var);return false;">Next question<i class="material-icons right">send</i></a>
