@@ -7020,7 +7020,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .side-nav .divider {
-  margin: 8px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .side-nav .subheader {
