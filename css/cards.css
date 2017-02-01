@@ -33,7 +33,14 @@ body nav li a{
   max-width:35% !important;
   border:solid green 1px;
 }
-
+.next{
+  float:right;
+  max-width: 45% !important;
+}
+.prev{
+  float:left;
+  max-width: 45% !important;
+}
 .card-stacked{
   display: block;
   max-width: 65% !important;
