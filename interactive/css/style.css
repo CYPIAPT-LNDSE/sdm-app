@@ -30,10 +30,18 @@ body {
 
 /* Text container */
 .text-container {
+    opacity: 0;
+    color: white;
+    display: block;
     position: absolute;
-    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0 20%;
+    left: 0;
+    bottom: 10%;
     z-index: 2;
     font-family: 'Roboto', sans-serif;
+    font-size: 30px;
 }
 
 /* SVG Styles */
@@ -42,6 +50,9 @@ body {
     transform: translate(-50%, -50%);
     opacity: 0;
 }
+
+
+/* Helpers */
 
 /* Width Helpers */
 .w-5 { width: 5%; }
@@ -64,3 +75,21 @@ body {
 .w-90 { width: 90%; }
 .w-95 { width: 95%; }
 .w-100 { width: 100%; }
+
+
+/* Other Helpers */
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.white {
+    color: white;
+}
+.hidden {
+    opacity: 0;
+}
+.absolute {
+    position: absolute;
+}
+.ib {
+    display: inline-block;
+}
