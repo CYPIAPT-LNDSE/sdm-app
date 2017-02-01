@@ -6,3 +6,10 @@ $("#dogheadfacingfront").on("click", function() {
     optionsScene();
   }
 });
+
+// Mirror (Practical)
+$("#miscmirrorwithdog").on("click", function() {
+  if (globalState.currentscene == "options") {
+    practicalIntroScene();
+  }
+});
