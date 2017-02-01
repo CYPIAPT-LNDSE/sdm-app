@@ -12,7 +12,6 @@
   <title>sdm-app</title>
   <script language="javascript" type="text/javascript">
   var scrt_var = window.location.href.split("=")[1] || 1;
-
   </script>
 </head>
 <body>
@@ -98,7 +97,7 @@
 
     I agree that this is ugly. I considered using an eventListener...but I couldn't figure out
     how I can keep track of the question id-->
-     <a href="3cards_layout.html" onclick='if(scrt_var<3){location.href=this.href+"?key="+ ++scrt_var}else{location.href="file:///home/nori/FAC/sdm-app/src/static/"+"2cards_layout.html?key="+ ++scrt_var};return false;'>Go to the next question</a>
+     <a href="3cards_layout.html" id="next" onclick="gotToNextQuestion(scrt_var);return false;">Go to the next question</a>
     </div>
 
   </script>
@@ -110,5 +109,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script src="js/helper.js"></script>
   <script type="text/javascript" src="js/cards.js"></script>
+  <script type="text/javascript" src="js/nextQuestion.js"></script>
 </body>
 </html>
