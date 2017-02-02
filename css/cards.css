@@ -7,9 +7,6 @@ body{
   margin-top: 0.5em;
 }
 
-/*nav{
-  border-bottom: 0.35em solid black;
-}*/
 
 header, main, footer {
   padding-left: 300px;
@@ -23,32 +20,62 @@ header, main, footer {
 body nav li a{
   height: auto !important
 }
-
+.depression{
+  max-width: 80%;
+  margin:0 auto;
+}
+.description{
+  border:solid grey 0.1rem;
+  box-shadow: 1em 1em 0.5em #grey;
+  margin: 2.5em auto;
+  padding: 1.5em;
+}
 .color-gray {
   color: #9e9e9e ;
 }
 .card{
-  border:solid white 0.25rem;
-/*  border: none;*/
-  box-shadow: none;
+  border:solid grey 0.1rem;
+  box-shadow: 1em 1em 0.5em #grey;
   min-height: 250px !important;
   box-sizing: border-box !important;
 }
 .card-image{
   display:block;
   max-width:35% !important;
-  /*border:solid green 1px;*/
 }
+
 .card-content{
   vertical-align: middle;
 }
+
+.options{
+  width:80%;
+  margin: 0 auto;
+  display: flex;
+/*  justify-content: center;*/
+  justify-content: space-between;
+  flex-direction: row;
+}
+.card-cont{
+  max-width:30%;
+  display: inline-block;
+}
+.start{
+  float:right;
+  max-width: 45% !important;
+  font-size:1.25em;
+  margin-bottom: 1.5em;
+}
+
 .next{
   float:right;
   max-width: 45% !important;
+  font-size:1.25em;
 }
 .prev{
   float:left;
   max-width: 45% !important;
+  font-size:1.25em;
 }
 .card-stacked{
   display: block;
@@ -59,7 +86,6 @@ body nav li a{
 .try{
   display:block;
   max-width:35%;
-  /*border:solid green 1px;*/
 }
 
 .card-stacked-duo{
@@ -112,6 +138,19 @@ body nav li a{
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .options{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-cont{
+    max-width:60%;
+    display: inline-block;
+  }
+}
+
 img{
   width: 100% !important;
   max-width: 180px !important;
@@ -121,11 +160,18 @@ img{
 p{
   font-size:1.25em;
 }
-
+.disordertitle{
+  font-size:2.5em;
+  margin:0 auto;
+}
 h2{
   font-size: 2.25em;
 }
 
 h4{
-  font-size: 1.75em;
+  font-size: 1.65em;
+}
+
+h5{
+  font-size:1.4em;
 }
