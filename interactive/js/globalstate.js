@@ -1,0 +1,3 @@
+var globalState = {
+  currentscene: "introduction"
+}
