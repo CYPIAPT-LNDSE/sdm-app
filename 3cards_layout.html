@@ -16,12 +16,12 @@
 </head>
 <body>
 
-  <nav class="blue lighten-4">
-    <h1 class="brand-logo center icon-green">SDMAPP</h1>
+  <nav class="teal">
+    <h1 class="brand-logo center text-white margintop05em default-cursor">SDMAPP</h1>
     <ul class="right">
-      <li><a class="no-hover" href="./index.html"><i class="material-icons icon-green">home</i></a></ul>
+      <li><a class="no-hover" href="./index.html"><i class="material-icons text-white">home</i></a></ul>
         <ul id="slide-out" class="side-nav" class="collection">
-          <li><a class="no-hover"><h4>Questions</h4></a></li><!--Esraa why is this a link? Where should it point to?(Nóri)-->
+          <li><a class="no-hover default-cursor"><h4 class="text-white">Questions</h4></a></li>
           <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(0);return false;">What will this involve?</a></li>
           <li class="divider" ></li>
           <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(1);return false;">How will this help me get better?</a></li>
@@ -35,74 +35,67 @@
           <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(5);return false;">Where can I get this support?</a></li>
           <li class="divider"></li>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons icon-green ">menu</i></a>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons text-white ">menu</i></a>
       </nav>
   <section class="hbs-container"></section>
 
   <!-- actual client side template -->
   <script id="template-hbs" type="text/x-handlebars-template">
-    <div class="row s12">
+    <div class="row s12 p-40">
       <div class="question">
       <h2>{{getQuestion questions}}</h2>
     </div>
-      <div class="col s12 m4 l4">
-        <div class="card horizontal">
+      <div class="col s12 m12 l4">
+        <div class="card horizontal transparent">
           <div class="card-image">
-            <div class="card-name">
+            <!-- <div class="card-name">
               <h5>{{treatments.practical_support.name}}</h5>
-            </div>
+            </div> -->
             <img src={{treatments.practical_support.icon}} alt="" />
           </div>
           <div class="card-stacked">
             <div class="card-content">
               <p>{{getPracticalSupport questions}}</p>
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="col s12 m4 l4">
-        <div class="card horizontal">
+      <div class="col s12 m12 l4">
+        <div class="card horizontal transparent">
           <div class="card-image">
-            <div class="card-name">
+            <!-- <div class="card-name">
               <h5>{{treatments.talking_therapy.name}}</h5>
-            </div>
+            </div> -->
             <img src={{treatments.talking_therapy.icon}} alt="" />
           </div>
           <div class="card-stacked">
             <div class="card-content">
               <p>{{getTalkingTherapy questions}}</p>
             </div>
-            <div class="card-action">
-              <a href="#">Save it!</a>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="col s12 m4 l4">
-        <div class="card horizontal">
+      <div class="col s12 m12 l4">
+        <div class="card horizontal transparent">
           <div class="card-image">
-            <div class="card-name">
+            <!-- <div class="card-name">
               <h5>{{treatments.medication.name}}</h5>
-            </div>
+            </div> -->
             <img src={{treatments.medication.icon}} alt="" />
           </div>
           <div class="card-stacked">
             <div class="card-content">
               <p>{{getMedication questions}}</p>
             </div>
-            <div class="card-action">
-              <a href="#">Save it!</a>
-            </div>
           </div>
         </div>
       </div>
+      <div class="redirect">
       <a class="waves-effect waves-light btn-large prev" href="3cards_layout.html" onclick="goToPreviousQuestion(scrt_var);return false;">Previous question<i class="material-icons left rotate_180">send</i></a>
       <a class="waves-effect waves-light btn-large next" href="3cards_layout.html"  onclick="gotToNextQuestion(scrt_var);return false;">Next question<i class="material-icons right">send</i></a>
+    </div>
     </div>
 
   </script>

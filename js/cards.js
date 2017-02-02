@@ -30,7 +30,7 @@ $(document).ready(function(){
         treatments: {
           practical_support:{
             name: "Practical Support",
-            icon: "./img/practical_support2.jpg"
+            icon: "./img/practical_support4.jpg"
           },
           talking_therapy:{
             name: "Talking Therapy",
@@ -38,7 +38,7 @@ $(document).ready(function(){
           },
           medication:{
             name: "Medication",
-            icon: "./img/medication2.jpg"
+            icon: "./img/medication3.png"
           }
         },
         questions:{
@@ -116,10 +116,10 @@ $(document).ready(function(){
     let newUrl= url.split("/")
     let key=newUrl.pop();
     let num=key.split("=")[1]||1;
-    if (num===1) {
+    if (num==='1') {
        $('.prev').hide();
        $('.next').show();
-   } else if (num==6) {
+   } else if (num==='6') {
        $('.next').hide();
        $('.prev').show();
    } else {
@@ -127,7 +127,7 @@ $(document).ready(function(){
        $('.next').show();
    }
     // add result to the page:
-
     $('.card').matchHeight();
     $('.card-name').matchHeight();
+    $('.card-height').matchHeight();
 });
