@@ -47,11 +47,10 @@ body nav li a{
 .card-content{
   vertical-align: middle;
 }
-/*felx
-justify-content-center
-flex-direction cloumn*/
+
 .options{
-  width:100%;
+  width:80%;
+  margin: 0 auto;
   display: flex;
 /*  justify-content: center;*/
   justify-content: space-between;
