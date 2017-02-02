@@ -7,9 +7,6 @@ body{
   margin-top: 0.5em;
 }
 
-/*nav{
-  border-bottom: 0.35em solid black;
-}*/
 
 header, main, footer {
   padding-left: 300px;
@@ -23,9 +20,14 @@ header, main, footer {
 body nav li a{
   height: auto !important
 }
-.description{
+.depression{
   max-width: 80%;
-  margin: 0 auto;
+  margin:0 auto;
+}
+.description{
+  border:solid grey 0.1rem;
+  box-shadow: 1em 1em 0.5em #grey;
+  margin: 2.5em auto;
   padding: 2em;
 }
 .color-gray {
@@ -33,7 +35,6 @@ body nav li a{
 }
 .card{
   border:solid grey 0.1rem;
-/*  border: none;*/
   box-shadow: 1em 1em 0.5em #grey;
   min-height: 250px !important;
   box-sizing: border-box !important;
@@ -41,18 +42,25 @@ body nav li a{
 .card-image{
   display:block;
   max-width:35% !important;
-  /*border:solid green 1px;*/
 }
 .card-content{
   vertical-align: middle;
 }
+.start{
+  float:right;
+  max-width: 45% !important;
+  font-size:1.25em;
+}
+
 .next{
   float:right;
   max-width: 45% !important;
+  font-size:1.25em;
 }
 .prev{
   float:left;
   max-width: 45% !important;
+  font-size:1.25em;
 }
 .card-stacked{
   display: block;
@@ -63,7 +71,6 @@ body nav li a{
 .try{
   display:block;
   max-width:35%;
-  /*border:solid green 1px;*/
 }
 
 .card-stacked-duo{
@@ -127,6 +134,7 @@ p{
 }
 .disordertitle{
   font-size:3em;
+  margin:0 auto;
 }
 h2{
   font-size: 2.25em;
