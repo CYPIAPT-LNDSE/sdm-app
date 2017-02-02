@@ -1,14 +1,14 @@
 body{
-  background-image: url('../img/Bubble.png');
+  background-color: #031f4c;
 }
 
 body nav li a{
   height: auto !important
 }
 
-nav{
+/*nav{
   border-bottom: 0.35em solid black;
-}
+}*/
 .no-hover:hover {
   background-color: inherit !important;
 }

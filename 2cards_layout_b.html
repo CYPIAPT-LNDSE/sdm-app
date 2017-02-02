@@ -16,12 +16,12 @@
 </head>
 <body>
 
-  <nav class="transparent">
-    <h1 class="brand-logo center color-gray margintop05em default-cursor">SDMAPP</h1>
+  <nav class="teal">
+    <h1 class="brand-logo center text-white margintop05em default-cursor">SDMAPP</h1>
     <ul class="right">
-      <li><a class="no-hover" href="./index.html"><i class="material-icons color-gray">home</i></a></ul>
+      <li><a class="no-hover" href="./index.html"><i class="material-icons text-white">home</i></a></ul>
         <ul id="slide-out" class="side-nav" class="collection">
-          <li><a class="no-hover default-cursor"><h4 class="color-gray">Questions</h4></a></li>
+          <li><a class="no-hover default-cursor"><h4 class="text-white">Questions</h4></a></li>
           <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(0);return false;">What will this involve?</a></li>
           <li class="divider" ></li>
           <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(1);return false;">How will this help me get better?</a></li>
@@ -35,14 +35,14 @@
           <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(5);return false;">Where can I get this support?</a></li>
           <li class="divider"></li>
         </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons color-gray ">menu</i></a>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons text-white ">menu</i></a>
       </nav>
 
   <section class="hbs-container"></section>
 
   <!-- actual client side template -->
   <script id="template-hbs" type="text/x-handlebars-template">
-    <div class="row s12">
+    <div class="row s12 p-40">
       <div class="question">
       <h2>{{getQuestion questions}}</h2>
     </div>
@@ -50,15 +50,15 @@
         <div class="card horizontal transparent">
           <div class="try">
           <div class="card-image-duo">
-            <div class="card-name card-height">
+            <!-- <div class="card-name card-height">
               <h4>{{treatments.practical_support.name}}</h4>
-            </div>
+            </div> -->
             <img src={{treatments.practical_support.icon}} alt="" />
           </div>
           <div class="card-image-duo">
-            <div class="card-name">
+            <!-- <div class="card-name">
               <h4>{{treatments.talking_therapy.name}}</h4>
-            </div>
+            </div> -->
             <img src={{treatments.talking_therapy.icon}} alt="" />
           </div>
         </div>
@@ -74,9 +74,9 @@
       <div class="col s12 m12 l4">
         <div class="card horizontal transparent">
           <div class="card-image">
-            <div class="card-name card-height">
+            <!-- <div class="card-name card-height">
               <h5>{{treatments.medication.name}}</h5>
-            </div>
+            </div> -->
             <img src={{treatments.medication.icon}} alt="" />
           </div>
           <div class="card-stacked">
