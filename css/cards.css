@@ -7,6 +7,10 @@ body{
   margin-top: 0.5em;
 }
 
+.mwidth-40 {
+    max-width: 40%;
+}
+
 
 header, main, footer {
   padding-left: 300px;
@@ -107,7 +111,11 @@ body nav li a{
 .card-name{
   text-align: center;
   padding:0.5em;
+  height: 77px;
 }
+
+
+
 .redirect{
   padding: 4em 0.75em;
 }
