@@ -3,7 +3,7 @@
       <head>
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-        <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+        <link type="text/css" rel="stylesheet" href="css/cards.css" media="screen,projection" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8">
         <title>sdm-app</title>
@@ -30,13 +30,46 @@
               </ul>
               <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons white-text ">menu</i></a>
             </nav>
-            <h2 class="disordertitle"> Depression </h2>
-            <div class="centertext">Everyone can feel fed up, hopeless, miserable or sad at times. Sometimes there's a reason, sometimes not. If you're finding that your feelings are keeping you from getting on with your life, it may be good to find out about the different treatment and support options that are out there for feeling depressed.</div>
+            <div class="depression">
+            <div class="description">
+              <h2 class="disordertitle"> Depression </h2>
+              <div class="centertext">
+                <h5>Everyone can feel fed up, hopeless, miserable or sad at times. Sometimes there's a reason, sometimes not. If you're finding that your feelings are keeping you from getting on with your life, it may be good to find out about the different treatment and support options that are out there for feeling depressed.</div>
+              </h5>
+              <h5>The next pages will give a brief introduction on you treatment options. For depression you can
+              choose from three different treatment strategies. </h5>
+            <section class="hbs-container"></section>
+            </div>
+            <a class="waves-effect waves-light btn-large start" href="3cards_layout.html"  onclick="gotToNextQuestion(0);return false;">Start<i class="material-icons right">send</i></a>
+          </div>
 
-
+          <script id="template-hbs" type="text/x-handlebars-template">
+          <div class="options">
+            <div class="card-cont">
+               <div class="card-name">
+                <h5>{{treatments.practical_support.name}}</h5>
+              </div>
+              <img src={{treatments.practical_support.icon}} alt="" />
+            </div>
+            <div class="card-cont">
+               <div class="card-name">
+                <h5>{{treatments.talking_therapy.name}}</h5>
+              </div>
+              <img src={{treatments.talking_therapy.icon}} alt="" />
+            </div>
+            <div class="card-cont">
+              <div class="card-name">
+                <h5>{{treatments.medication.name}}</h5>
+              </div>
+              <img src={{treatments.medication.icon}} alt="" />
+            </div>
+          </div>
+        </script>
               <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
               <script type="text/javascript" src="js/materialize.js"></script>
               <script type="text/javascript" src="js/index.js"></script>
               <script type="text/javascript" src="js/nextQuestion.js"></script>
+              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+              <script type="text/javascript" src="js/cards2.js"></script>
             </body>
             </html>
