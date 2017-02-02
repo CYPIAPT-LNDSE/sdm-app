@@ -16,6 +16,10 @@ header, main, footer {
   padding-left: 300px;
 }
 
+.no-hover:hover {
+  background-color: inherit !important;
+}
+
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
@@ -143,6 +147,10 @@ body nav li a{
   .p-40 {
     padding: 30px !important;
   }
+}
+
+.default-cursor{
+  cursor: default;
 }
 
 @media only screen and (max-width: 400px) {
