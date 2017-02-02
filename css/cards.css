@@ -43,8 +43,23 @@ body nav li a{
   display:block;
   max-width:35% !important;
 }
+
 .card-content{
   vertical-align: middle;
+}
+/*felx
+justify-content-center
+flex-direction cloumn*/
+.options{
+  width:100%;
+  display: flex;
+/*  justify-content: center;*/
+  justify-content: space-between;
+  flex-direction: row;
+}
+.card-cont{
+  max-width:30%;
+  display: inline-block;
 }
 .start{
   float:right;
@@ -120,6 +135,19 @@ body nav li a{
 @media only screen and (min-width: 700px) {
   .p-40 {
     padding: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .options{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .card-cont{
+    max-width:60%;
+    display: inline-block;
   }
 }
 
