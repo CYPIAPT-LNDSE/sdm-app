@@ -22,13 +22,21 @@ body nav li a{
   margin-top: 50px;
 }
 
+.hov-orange:hover {
+    background-color: #f9a825 !important;
+    color: white !important;
+}
+
+.hov-blue:hover {
+    background-color: #00b0ff !important;
+}
 
 .default-cursor{
   cursor: default;
 }
 
 .color-gray {
-  color: #9e9e9e ; <!--need it for cards-->
+  color: #9e9e9e;
 }
 
 /*start here button on landing page*/
