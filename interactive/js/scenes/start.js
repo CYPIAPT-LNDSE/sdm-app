@@ -35,6 +35,6 @@
   TL.to(["#dogbodyfacingfront", "#dogheadfacingfront"], 0.3, {opacity: 1}, 0);
   TL.to("#dogbodyfacingfront", 0.8, {top: "50%"}, 0);
   TL.to("#dogheadfacingfront", 0.8, {top: "37%"},0);
-  TL.to("#textcontainer", 1, {color: "white", opacity: 1}, .8);
+  TL.to("#textcontainer", 1, {color: "white", opacity: 1}, .5);
 
 })();

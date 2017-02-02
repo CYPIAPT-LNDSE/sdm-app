@@ -53,8 +53,7 @@ function practicalDetailsScene () {
     .to("#miscpracticallistsmall", .5, {opacity: 0}, "dogstoside")
     .to("#miscpracticallistdetailed", 0, practicalListDetailedPosition, "listfade-=.7")
     .to("#miscpracticallistdetailed", .2, newPracticalListDetailedPosition, "listfade-=.7")
-    .to("#textcontainer", 1.5, {opacity: 1}, "-=.3");
-
+    .to("#textcontainer", 1, {opacity: 1}, "-=.3");
 
 
     function changeTextAndPosition () {

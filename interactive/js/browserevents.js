@@ -33,6 +33,14 @@ $("#miscpracticallistsmall").on("click", function() {
   }
 });
 
+// Practical List Detail Click
+$("#miscpracticallistdetailed").on("click", function() {
+  if (globalState.currentscene == "practicaldetails") {
+    globalState.currentscene = "locations";
+    locationsScene();
+  }
+});
+
 // Switch scene
 function switchScene() {
   switch (globalState.currentscene) {
@@ -44,6 +52,11 @@ function switchScene() {
     case "practicalintro" : {
       globalState.currentscene = "practicaldetails";
       practicalDetailsScene();
+      break;
+    }
+    case "practicaldetails" : {
+      globalState.currentscene = "locations";
+      locationsScene();
       break;
     }
     default : return;
