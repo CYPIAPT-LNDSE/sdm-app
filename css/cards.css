@@ -52,7 +52,6 @@ body nav li a{
   width:80%;
   margin: 0 auto;
   display: flex;
-/*  justify-content: center;*/
   justify-content: space-between;
   flex-direction: row;
 }
