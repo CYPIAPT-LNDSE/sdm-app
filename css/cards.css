@@ -27,7 +27,7 @@ body nav li a{
 .description{
   border:solid grey 0.1rem;
   box-shadow: 1em 1em 0.5em #grey;
-  margin: 2.5em auto;
+  margin: 1.5em auto;
   padding: 1.5em;
 }
 .color-gray {
@@ -52,7 +52,6 @@ body nav li a{
   width:80%;
   margin: 0 auto;
   display: flex;
-/*  justify-content: center;*/
   justify-content: space-between;
   flex-direction: row;
 }
@@ -148,6 +147,7 @@ body nav li a{
   .card-cont{
     max-width:60%;
     display: inline-block;
+    margin:0 auto;
   }
 }
 
