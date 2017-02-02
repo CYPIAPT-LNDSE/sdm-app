@@ -37,10 +37,9 @@ body nav li a{
 }
 
 /*start here button on landing page*/
-.btn {
-  position: absolute;
-  top:60%;
-  left:60%;
+
+.width-30 {
+    width: 140px !important;
 }
 
 /*depression page*/
