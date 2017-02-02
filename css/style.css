@@ -13,18 +13,13 @@ body nav li a{
   background-color: inherit !important;
 }
 
-.centertext {
-  position: absolute;
-  left:12%;
-  right:12%;
-  top:25%;
-  font-weight: 400;
-  font-size: 2em;
-  color: white;
+
+.tmargin-100 {
+  margin-top: 100px;
 }
 
-.margintop05em {
-  margin-top: 0.5em;
+.tmargin-50 {
+  margin-top: 50px;
 }
 
 
@@ -39,7 +34,7 @@ body nav li a{
 /*start here button on landing page*/
 
 .width-30 {
-    width: 140px !important;
+    width: 150px !important;
 }
 
 /*depression page*/
