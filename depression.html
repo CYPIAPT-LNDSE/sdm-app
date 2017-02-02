@@ -13,63 +13,64 @@
           <h1 class="brand-logo center white-text margintop05em default-cursor">SDMAPP</h1>
           <ul class="right">
             <li><a class="no-hover" href="./index.html"><i class="material-icons white-text">home</i></a></ul>
-              <ul id="slide-out" class="side-nav" class="collection">
-                <li><a class="no-hover default-cursor"><h4>Questions</h4></a></li>
-                <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(0);return false;">What will this involve?</a></li>
-                <li class="divider" ></li>
-                <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(1);return false;">How will this help me get better?</a></li>
-                <li class="divider"></li>
-                <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(2);return false;">Will I see the same people for the duration of this help or support?</a></li>
-                <li class="divider"></li>
-                <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(3);return false;">Can I use other types of support alongside this?</a></li>
-                <li class="divider"></li>
-                <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(4);return false;">Are there risks or side effects from this type of help or support?</a></li>
-                <li class="divider"></li>
-                <li><a href="3cards_layout.html"  onclick="gotToNextQuestion(5);return false;">Where can I get this support?</a></li>
-                <li class="divider"></li>
-              </ul>
-              <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons white-text ">menu</i></a>
-            </nav>
-            <div class="depression">
-            <div class="description">
-              <h2 class="disordertitle"> Depression </h2>
-              <div class="centertext">
+        <ul id="slide-out" class="side-nav" class="collection">
+            <li><a class="no-hover default-cursor"><h4>Questions</h4></a></li>
+            <li><a href="3cards_layout.html" onclick="gotToNextQuestion(0);return false;">What will this involve?</a></li>
+            <li class="divider"></li>
+            <li><a href="3cards_layout.html" onclick="gotToNextQuestion(1);return false;">How will this help me get better?</a></li>
+            <li class="divider"></li>
+            <li><a href="3cards_layout.html" onclick="gotToNextQuestion(2);return false;">Will I see the same people for the duration of this help or support?</a></li>
+            <li class="divider"></li>
+            <li><a href="3cards_layout.html" onclick="gotToNextQuestion(3);return false;">Can I use other types of support alongside this?</a></li>
+            <li class="divider"></li>
+            <li><a href="3cards_layout.html" onclick="gotToNextQuestion(4);return false;">Are there risks or side effects from this type of help or support?</a></li>
+            <li class="divider"></li>
+            <li><a href="3cards_layout.html" onclick="gotToNextQuestion(5);return false;">Where can I get this support?</a></li>
+            <li class="divider"></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons white-text ">menu</i></a>
+    </nav>
+    <div class="depression">
+        <div class="description">
+            <h2 class="disordertitle"> Depression </h2>
+            <div class="centertext">
                 <h5>Everyone can feel fed up, hopeless, miserable or sad at times. Sometimes there's a reason, sometimes not. If you're finding that your feelings are keeping you from getting on with your life, it may be good to find out about the different treatment and support options that are out there for feeling depressed.</div>
-              </h5>
-              <h5>The next pages will give a brief introduction on you treatment options. For depression you can
-              choose from three different treatment strategies. </h5>
-            <section class="hbs-container"></section>
+        </h5>
+                <h5>The next pages will give a brief introduction on you treatment options. For depression you can
+        choose from three different treatment strategies. </h5>
+                <section class="hbs-container"></section>
             </div>
-            <a class="waves-effect waves-light btn-large start" href="3cards_layout.html"  onclick="gotToNextQuestion(0);return false;">Start<i class="material-icons right">send</i></a>
-          </div>
+            <a class="waves-effect waves-light btn-large start" href="3cards_layout.html" onclick="gotToNextQuestion(0);return false;">Start<i class="material-icons right">send</i></a>
+        </div>
 
-          <script id="template-hbs" type="text/x-handlebars-template">
-          <div class="options">
-            <div class="card-cont">
-               <div class="card-name">
-                <h5>{{treatments.practical_support.name}}</h5>
-              </div>
-              <img src={{treatments.practical_support.icon}} alt="" />
+        <script id="template-hbs" type="text/x-handlebars-template">
+            <div class="options mwidth-40">
+                <div class="card-cont">
+                    <div class="card-name">
+                        <h5>{{treatments.practical_support.name}}</h5>
+                    </div>
+                    <img src={{treatments.practical_support.icon}} alt="" />
+                </div>
+                <div class="card-cont">
+                    <div class="card-name">
+                        <h5>{{treatments.talking_therapy.name}}</h5>
+                    </div>
+                    <img src={{treatments.talking_therapy.icon}} alt="" />
+                </div>
+                <div class="card-cont">
+                    <div class="card-name">
+                        <h5>{{treatments.medication.name}}</h5>
+                    </div>
+                    <img src={{treatments.medication.icon}} alt="" />
+                </div>
             </div>
-            <div class="card-cont">
-               <div class="card-name">
-                <h5>{{treatments.talking_therapy.name}}</h5>
-              </div>
-              <img src={{treatments.talking_therapy.icon}} alt="" />
-            </div>
-            <div class="card-cont">
-              <div class="card-name">
-                <h5>{{treatments.medication.name}}</h5>
-              </div>
-              <img src={{treatments.medication.icon}} alt="" />
-            </div>
-          </div>
         </script>
-              <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-              <script type="text/javascript" src="js/materialize.js"></script>
-              <script type="text/javascript" src="js/index.js"></script>
-              <script type="text/javascript" src="js/nextQuestion.js"></script>
-              <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-              <script type="text/javascript" src="js/cards2.js"></script>
-            </body>
-            </html>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/nextQuestion.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script type="text/javascript" src="js/cards2.js"></script>
+</body>
+
+</html>
