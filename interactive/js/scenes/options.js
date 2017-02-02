@@ -1,5 +1,10 @@
 // BackgroundColor = #26C6DA
 // TextColor = #FAFAFA
+/* Text =
+
+"Click one of the options to find out more"
+
+*/
 
 function optionsScene () {
   // Styles

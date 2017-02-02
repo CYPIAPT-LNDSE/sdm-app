@@ -1,5 +1,6 @@
 // BackgroundColor = #fff3e0
 // TextColor = #f9a857
+
 /* Text =
 This can be found at CAMHS,
 at school,
@@ -9,34 +10,6 @@ or in the community.
 */
 
 function locationsScene () {
-  // Styles
-
-  // var newTextPosition = {
-  //   width: "80%",
-  //   top: "10%",
-  //   left: "35%"
-  // }
-  //
-  // var newPracticalListSmallPosition = {
-  //   width: "35%",
-  //   left: "25%",
-  //   top: "66%",
-  // }
-  //
-  // var practicalListDetailedPosition = {
-  //   width: "11%",
-  //   left: "50%",
-  //   top: "50%"
-  // }
-  //
-  // var newPracticalListDetailedPosition = {
-  //   width: "38%",
-  //   left: "25%",
-  //   top: "66%",
-  //   opacity: 1
-  // }
-
-
 
   // BackgroundChange
   TweenMax.to("#background", 1, {backgroundColor: "#fff3e0", onComplete: changeText});
@@ -49,26 +22,7 @@ function locationsScene () {
     .to("#miscschool", 0, {left: "40%", top: "70%", width: "12%", opacity: 1}, "+=.2")
     .to("#miscbuilding", 0, {left: "60%", top: "33%", width: "12%", opacity: 1}, "+=.2")
     .to("#miscwebdevices", 0, {left: "80%", top: "70%", width: "20%", opacity: 1}, "+=.2")
-    // .to("#miscchurch", 0, {left: "15%", top: "55%", opacity: 1}, "+=.7")
-  //   .to("#bdogheadfacingleft", 1.5, {x: "600px", opacity: 0}, "dogstoside-=.7")
-  //   .to("#bdogbodyfacingfront", .8, {x: "600px", opacity: 0}, "dogstoside-=.7")
-  //   .to("#miscpracticallistsmall", .5, {opacity: 0}, "dogstoside")
-  //   .to("#miscpracticallistdetailed", 0, practicalListDetailedPosition, "listfade-=.7")
-  //   .to("#miscpracticallistdetailed", .2, newPracticalListDetailedPosition, "listfade-=.7")
-  //   .to("#textcontainer", 1.5, {opacity: 1}, "-=.3");
 
-
-
-    // function changeTextAndPosition () {
-    //   changeText();
-    //   changeTextPosition();
-    // }
-    //
-    //
-    // function changeTextPosition(){
-    //   TweenMax.to("#textcontainer", 0, newTextPosition);
-    // }
-    //
     function changeText () {
       $("#textcontainer").text("This can be found at CAMHS, school, online or in the community.");
     }
