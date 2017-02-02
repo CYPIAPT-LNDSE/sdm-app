@@ -1,4 +1,14 @@
-# sdm-app
+# SDM-APP
+
+[See Live Site Here](https://cypiapt-lndse.github.io/sdm-app/)
+
+## Team
+- [denesnori](https://github.com/denesnori) - Developer
+- [DHayes1987](https://github.com/DHayes1987) - Product Owner
+- [esraajb](https://github.com/esraajb) - Developer
+- [njsfield](https://github.com/njsfield) - Developer
+- [rosatown](https://github.com/rosatown) - Product Owner
+
 
 ## Problem
 Our clients take part in a program that encourages clinicians and patients to make a shared decision about the treatment that the patient will receive. Our clients have worked closely together with clinicians
