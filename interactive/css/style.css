@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -102,4 +106,23 @@ body {
 }
 .ib {
     display: inline-block;
+}
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.dark-grey-text {
+    color: rgb(100,100,100);
+}
+
+.hover-white:hover {
+    transition: all .3s ease;
+    color: white;
 }
