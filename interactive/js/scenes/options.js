@@ -50,12 +50,12 @@ function optionsScene () {
     left: "12%"
   }
   var talkingOptionText = {
-    opacity: 1,
+    opacity: 0.5,
     top: "67%",
     left: "36%"
   }
   var medicalOptionText = {
-    opacity: 1,
+    opacity: 0.5,
     top: "67%",
     left: "57%"
   }

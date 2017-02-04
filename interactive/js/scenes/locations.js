@@ -21,10 +21,16 @@ function locationsScene () {
     .to("#miscchurch", 0, {left: "15%", top: "55%", width: "12%", opacity: 1}, "+=.3")
     .to("#miscschool", 0, {left: "40%", top: "70%", width: "12%", opacity: 1}, "+=.2")
     .to("#miscbuilding", 0, {left: "60%", top: "33%", width: "12%", opacity: 1}, "+=.2")
-    .to("#miscwebdevices", 0, {left: "80%", top: "70%", width: "20%", opacity: 1}, "+=.2")
+    .to("#miscwebdevices", 0, {left: "80%", top: "70%", width: "20%", opacity: 1, onComplete: showEndDemoText}, "+=.2")
 
     function changeText () {
       $("#textcontainer").text("This can be found at CAMHS, school, online or in the community.");
+    }
+
+    function showEndDemoText(){
+      setTimeout(function(){
+        $("#endofdemocontainer").fadeIn()
+      }, 3000);
     }
 
 }
